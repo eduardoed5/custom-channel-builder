@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CrmConnections xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ByPassProxyOnLocal>false</ByPassProxyOnLocal>
+  <Connections>
+    <ConnectionDetail>
+      <AuthType>None</AuthType>
+      <AzureAdAppId>20f2a03b-fcb8-4fda-9b8a-181c48b48a26</AzureAdAppId>
+      <BrowserName>None</BrowserName>
+      <ClientSecret>vx49ok57FN2DSLNkPodNVc+pQ5EflWQhcAj2rrLzi9yaxG7cV+RSI05sMuuj+355</ClientSecret>
+      <ConnectionId>7e10bbab-990c-4993-b63a-79b6dd8c21cd</ConnectionId>
+      <ConnectionName>Marketing Demo #2</ConnectionName>
+      <EnvironmentId>93aa9407-db94-e7ac-b800-b0fccd3ac415</EnvironmentId>
+      <IsCustomAuth>false</IsCustomAuth>
+      <IsFromSdkLoginCtrl>false</IsFromSdkLoginCtrl>
+      <LastUsedOn>2025-05-07 16:21:56</LastUsedOn>
+      <NewAuthType>ClientSecret</NewAuthType>
+      <Organization>unqa40a455a661ef0119aed002248322</Organization>
+      <OrganizationDataServiceUrl>https://org25fb5ca9.api.crm.dynamics.com/XRMServices/2011/OrganizationData.svc</OrganizationDataServiceUrl>
+      <OrganizationFriendlyName>Marketing Trial</OrganizationFriendlyName>
+      <OrganizationServiceUrl>https://org25fb5ca9.api.crm.dynamics.com/XRMServices/2011/Organization.svc</OrganizationServiceUrl>
+      <OrganizationUrlName>org25fb5ca9</OrganizationUrlName>
+      <OrganizationVersion>9.2.25035.244</OrganizationVersion>
+      <OriginalUrl>https://org25fb5ca9.crm.dynamics.com/</OriginalUrl>
+      <S2SClientSecret>vx49ok57FN2DSLNkPodNVc+pQ5EflWQhcAj2rrLzi9yaxG7cV+RSI05sMuuj+355</S2SClientSecret>
+      <SavePassword>true</SavePassword>
+      <ServerName>org25fb5ca9.crm.dynamics.com</ServerName>
+      <ServerPort>443</ServerPort>
+      <TenantId>b36da8b1-8c11-4da2-917c-98eb4a17c46a</TenantId>
+      <Timeout />
+      <TimeoutTicks>9000000000</TimeoutTicks>
+      <UseIfd>false</UseIfd>
+      <UseMfa>false</UseMfa>
+      <UserName>20f2a03b-fcb8-4fda-9b8a-181c48b48a26</UserName>
+      <WebApplicationUrl>https://org25fb5ca9.crm.dynamics.com/</WebApplicationUrl>
+    </ConnectionDetail>
+    <ConnectionDetail>
+      <AuthType>None</AuthType>
+      <AzureAdAppId>e057e664-b18e-455e-bdd5-89375e5931df</AzureAdAppId>
+      <BrowserName>None</BrowserName>
+      <ClientSecret>RejCc3xfawIY6HRVj7lW0gA7NQbc8emG81kEGA6tXEQVs3Tpd+/MP7YI+USPkvC3</ClientSecret>
+      <ConnectionId>469367c1-a4d9-4b63-8b45-0c83f52b8771</ConnectionId>
+      <ConnectionName>Marketing</ConnectionName>
+      <EnvironmentId>7f378490-064e-eeaa-bc50-e283b218960e</EnvironmentId>
+      <IsCustomAuth>false</IsCustomAuth>
+      <IsFromSdkLoginCtrl>false</IsFromSdkLoginCtrl>
+      <LastUsedOn>2025-04-22 12:08:47</LastUsedOn>
+      <NewAuthType>ClientSecret</NewAuthType>
+      <Organization>unq36506d5bdeeeef11933d002248282</Organization>
+      <OrganizationDataServiceUrl>https://orgefaff192.api.crm.dynamics.com/XRMServices/2011/OrganizationData.svc</OrganizationDataServiceUrl>
+      <OrganizationFriendlyName>Marketing Trial</OrganizationFriendlyName>
+      <OrganizationServiceUrl>https://orgefaff192.api.crm.dynamics.com/XRMServices/2011/Organization.svc</OrganizationServiceUrl>
+      <OrganizationUrlName>orgefaff192</OrganizationUrlName>
+      <OrganizationVersion>9.2.25033.228</OrganizationVersion>
+      <OriginalUrl>https://orgefaff192.crm.dynamics.com</OriginalUrl>
+      <S2SClientSecret>RejCc3xfawIY6HRVj7lW0gA7NQbc8emG81kEGA6tXEQVs3Tpd+/MP7YI+USPkvC3</S2SClientSecret>
+      <SavePassword>true</SavePassword>
+      <ServerName>orgefaff192.crm.dynamics.com</ServerName>
+      <ServerPort>443</ServerPort>
+      <TenantId>703bcc20-ce67-441e-a5d3-78d5b6b0f652</TenantId>
+      <Timeout />
+      <TimeoutTicks>1200000000</TimeoutTicks>
+      <UseIfd>false</UseIfd>
+      <UseMfa>false</UseMfa>
+      <UserName>e057e664-b18e-455e-bdd5-89375e5931df</UserName>
+      <WebApplicationUrl>https://orgefaff192.crm.dynamics.com/</WebApplicationUrl>
+    </ConnectionDetail>
+  </Connections>
+  <IsReadOnly>false</IsReadOnly>
+  <Name>Default</Name>
+  <UseCustomProxy>false</UseCustomProxy>
+  <UseDefaultCredentials>false</UseDefaultCredentials>
+  <UseDetailsView>false</UseDetailsView>
+  <UseInternetExplorerProxy>true</UseInternetExplorerProxy>
+  <UseMruDisplay>false</UseMruDisplay>
+</CrmConnections>

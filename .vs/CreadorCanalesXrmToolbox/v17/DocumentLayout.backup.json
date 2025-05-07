@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Eric Vega\\source\\repos\\CreadorCanalesXrmToolbox\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{986D8723-DEE7-42DB-8DD7-4B0777406239}|CreadorCanalesXrmToolbox.csproj|c:\\users\\eric vega\\source\\repos\\creadorcanalesxrmtoolbox\\myplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986D8723-DEE7-42DB-8DD7-4B0777406239}|CreadorCanalesXrmToolbox.csproj|solutionrelative:myplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986D8723-DEE7-42DB-8DD7-4B0777406239}|CreadorCanalesXrmToolbox.csproj|C:\\Users\\Eric Vega\\source\\repos\\CreadorCanalesXrmToolbox\\mycustomchannelcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986D8723-DEE7-42DB-8DD7-4B0777406239}|CreadorCanalesXrmToolbox.csproj|solutionrelative:mycustomchannelcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986D8723-DEE7-42DB-8DD7-4B0777406239}|CreadorCanalesXrmToolbox.csproj|C:\\Users\\Eric Vega\\source\\repos\\CreadorCanalesXrmToolbox\\mycustomchannelcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{986D8723-DEE7-42DB-8DD7-4B0777406239}|CreadorCanalesXrmToolbox.csproj|solutionrelative:mycustomchannelcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986D8723-DEE7-42DB-8DD7-4B0777406239}|CreadorCanalesXrmToolbox.csproj|C:\\Users\\Eric Vega\\source\\repos\\CreadorCanalesXrmToolbox\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{986D8723-DEE7-42DB-8DD7-4B0777406239}|CreadorCanalesXrmToolbox.csproj|solutionrelative:packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{5a4e9529-b6a0-46b5-be4f-0f0b239bc0eb}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyCustomChannelControl.cs",
+              "DocumentMoniker": "C:\\Users\\Eric Vega\\source\\repos\\CreadorCanalesXrmToolbox\\MyCustomChannelControl.cs",
+              "RelativeDocumentMoniker": "MyCustomChannelControl.cs",
+              "ToolTip": "C:\\Users\\Eric Vega\\source\\repos\\CreadorCanalesXrmToolbox\\MyCustomChannelControl.cs",
+              "RelativeToolTip": "MyCustomChannelControl.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T19:20:37.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\Eric Vega\\source\\repos\\CreadorCanalesXrmToolbox\\packages.config",
+              "RelativeDocumentMoniker": "packages.config",
+              "ToolTip": "C:\\Users\\Eric Vega\\source\\repos\\CreadorCanalesXrmToolbox\\packages.config",
+              "RelativeToolTip": "packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-05-07T19:20:32.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MyCustomChannelControl.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Eric Vega\\source\\repos\\CreadorCanalesXrmToolbox\\MyCustomChannelControl.cs",
+              "RelativeDocumentMoniker": "MyCustomChannelControl.cs",
+              "ToolTip": "C:\\Users\\Eric Vega\\source\\repos\\CreadorCanalesXrmToolbox\\MyCustomChannelControl.cs [Dise\u00F1o]",
+              "RelativeToolTip": "MyCustomChannelControl.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T22:00:26.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyPlugin.cs",
+              "DocumentMoniker": "C:\\Users\\Eric Vega\\source\\repos\\CreadorCanalesXrmToolbox\\MyPlugin.cs",
+              "RelativeDocumentMoniker": "MyPlugin.cs",
+              "ToolTip": "C:\\Users\\Eric Vega\\source\\repos\\CreadorCanalesXrmToolbox\\MyPlugin.cs",
+              "RelativeToolTip": "MyPlugin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAACjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T20:37:23.362Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

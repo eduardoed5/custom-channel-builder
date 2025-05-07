@@ -1,0 +1,123 @@
+2025-04-17 12:46:02.100 p. m.	Marketing	Info	Settings found and loaded
+2025-04-17 12:46:40.356 p. m.	Marketing	Info	The existing solution has been obtained: Prueba Ribbon
+2025-04-17 12:46:40.642 p. m.	Marketing	Warning	The relationship for the configuration entity already exists
+2025-04-17 12:46:40.739 p. m.	Marketing	Info	The configuration entity metadata information has been obtained.
+2025-04-17 12:46:40.855 p. m.	Marketing	Warning	The necessary components (Configuration) in the solution are already added.
+2025-04-17 12:46:41.057 p. m.	Marketing	Warning	The necessary components (Editor) in the solution are already added.
+2025-04-17 12:46:41.171 p. m.	Marketing	Warning	The necessary components (custom API) in the solution are already added.
+2025-04-17 12:46:59.024 p. m.	Marketing	Info	The solution has been exported
+2025-04-17 12:46:59.045 p. m.	Marketing	Info	The solution has been extracted from the zip file
+2025-04-17 12:46:59.050 p. m.	Marketing	Info	The XML document has been read successfully
+2025-04-17 12:46:59.052 p. m.	Marketing	Info	The message parts have been created correctly.
+2025-04-17 12:46:59.055 p. m.	Marketing	Info	The locations have been created correctly
+2025-04-17 12:46:59.057 p. m.	Marketing	Info	The channel has been created successfully
+2025-04-17 12:46:59.057 p. m.	Marketing	Info	Messages Parts: <msdyn_channelmessageparts><msdyn_channelmessagepart msdyn_channelmessagepartid="79d1a816-6990-47c4-844a-c4ae81f729a1"><msdyn_channeldefinitionid><msdyn_channeldefinitionid>2f00d0ae-11b8-474d-a857-951878e48162</msdyn_channeldefinitionid></msdyn_channeldefinitionid><msdyn_name>titulo</msdyn_name><msdyn_displayname>Título</msdyn_displayname><msdyn_description>Parte del mensaje para: Titulo</msdyn_description><msdyn_type>192350000</msdyn_type><msdyn_isrequired>1</msdyn_isrequired><msdyn_maxlength>100</msdyn_maxlength><statecode>0</statecode><statuscode>1</statuscode><msdyn_order>1</msdyn_order></msdyn_channelmessagepart><msdyn_channelmessagepart msdyn_channelmessagepartid="23dbe1d7-4efd-400b-a04c-3d3822e6e90c"><msdyn_channeldefinitionid><msdyn_channeldefinitionid>2f00d0ae-11b8-474d-a857-951878e48162</msdyn_channeldefinitionid></msdyn_channeldefinitionid><msdyn_name>cuenta</msdyn_name><msdyn_displayname>Cuenta</msdyn_displayname><msdyn_description>Parte del mensaje para: Cuenta</msdyn_description><msdyn_type>192350005</msdyn_type><msdyn_isrequired>1</msdyn_isrequired><msdyn_maxlength>100</msdyn_maxlength><statecode>0</statecode><statuscode>1</statuscode><msdyn_order>2</msdyn_order><msdyn_entityname>account</msdyn_entityname><msdyn_entityviewid>00000000-0000-0000-00aa-000010001002</msdyn_entityviewid></msdyn_channelmessagepart></msdyn_channelmessageparts>
+2025-04-17 12:46:59.057 p. m.	Marketing	Info	Locales: <msdyn_channeldefinitionlocales><msdyn_channeldefinitionlocale msdyn_channeldefinitionlocaleid="3838e6ef-5c91-4c5f-a6fa-4369550e42c2"><msdyn_channeldefinitionid>2f00d0ae-11b8-474d-a857-951878e48162</msdyn_channeldefinitionid><msdyn_localeid>3082</msdyn_localeid><msdyn_localecontent>{"ChannelDefinition.DisplayName":  "Canal de prueba","ChannelDefinition.Description":  "Descripción del canal de prueba","ChannelDefinition.SpecialConsentLabel":  "Consentimiento del canal de prueba","ChannelMessagePart.titulo.DisplayName":  "Titulo","ChannelMessagePart.titulo.Description":  "Título del mensaje","ChannelMessagePart.cuenta.DisplayName":  "Cuenta","ChannelMessagePart.cuenta.Description":  "Nombre de la cuenta"}</msdyn_localecontent></msdyn_channeldefinitionlocale><msdyn_channeldefinitionlocale msdyn_channeldefinitionlocaleid="c1a46eb0-0a2b-4888-b87a-a99c9fc0bc94"><msdyn_channeldefinitionid>2f00d0ae-11b8-474d-a857-951878e48162</msdyn_channeldefinitionid><msdyn_localeid>1033</msdyn_localeid><msdyn_localecontent>{"ChannelDefinition.DisplayName":  "Test Channel","ChannelDefinition.Description":  "Test Channel description","ChannelDefinition.SpecialConsentLabel":  "Test channel consent","ChannelMessagePart.titulo.DisplayName":  "Title","ChannelMessagePart.titulo.Description":  "Title of the message","ChannelMessagePart.cuenta.DisplayName":  "Account","ChannelMessagePart.cuenta.Description":  "Account name"}</msdyn_localecontent></msdyn_channeldefinitionlocale></msdyn_channeldefinitionlocales>
+2025-04-17 12:46:59.057 p. m.	Marketing	Info	Channel : <msdyn_channeldefinitions><msdyn_channeldefinition msdyn_channeldefinitionid="2f00d0ae-11b8-474d-a857-951878e48162"><msdyn_channeldefinitionexternalentity>crbdb_configuraciondeprueba</msdyn_channeldefinitionexternalentity><msdyn_channeldefinitionexternalformid>7d091b8b-e675-43db-95a8-cb574352fd17</msdyn_channeldefinitionexternalformid><msdyn_channeltype>Custom</msdyn_channeltype><msdyn_description>Solución para el canal de prueba</msdyn_description><msdyn_displayname>Nombre del canal de prueba</msdyn_displayname><msdyn_hasdeliveryreceipt>1</msdyn_hasdeliveryreceipt><msdyn_hasinbound>0</msdyn_hasinbound><msdyn_messageformid>f7b5d660-ea91-48b5-a27a-1cf813597fb2</msdyn_messageformid><msdyn_outboundendpointurltemplate>/cr65f_OutboundCustomApi</msdyn_outboundendpointurltemplate><msdyn_specialconsentrequired>0</msdyn_specialconsentrequired><msdyn_supportsaccount>0</msdyn_supportsaccount><msdyn_supportsattachment>1</msdyn_supportsattachment><msdyn_supportsbinary>1</msdyn_supportsbinary><statecode>0</statecode><statuscode>1</statuscode></msdyn_channeldefinition></msdyn_channeldefinitions>
+2025-04-17 12:46:59.057 p. m.	Marketing	Info	Customizations.xml file edited successfully
+2025-04-17 12:46:59.087 p. m.	Marketing	Info	New solution generated in a zip file
+2025-04-17 12:48:59.170 p. m.	Marketing	Error	It happened when generating the channel solution: El canal de solicitud agotó el tiempo de espera mientras esperaba una respuesta después de 00:01:59.9989046. Aumente el valor de tiempo de espera pasado a la llamada a Request, o bien aumente el valor de SendTimeout en el enlace. El tiempo asignado a esta operación puede haber sido una parte de un tiempo de espera mayor. 
+Server stack trace: 
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en Microsoft.Xrm.Tooling.Connector.CrmServiceClient.Execute(OrganizationRequest request)
+   en CreadorCanalesXrmToolbox.CRMOperations.ImportSolution(IOrganizationService servicio, String nombreSolucion, String rutaArchivo) en C:\Users\Eric Vega\source\repos\CreadorCanalesXrmToolbox\CRMOperations.cs:línea 294
+   en CreadorCanalesXrmToolbox.MyCustomChannelControl.<BtnCreateSolution_Click>b__55_0(BackgroundWorker worker, DoWorkEventArgs eventWorker) en C:\Users\Eric Vega\source\repos\CreadorCanalesXrmToolbox\MyCustomChannelControl.cs:línea 1759
+2025-04-17 01:01:21.176 p. m.	Marketing	Info	Settings found and loaded
+2025-04-21 04:29:15.749 p. m.	Marketing	Info	Settings found and loaded
+2025-04-22 10:24:06.091 a. m.	Marketing Demo #2	Info	Settings found and loaded
+2025-04-22 10:42:43.166 a. m.	Marketing	Info	Settings found and loaded
+2025-04-22 10:44:56.050 a. m.	Marketing	Info	The existing solution has been obtained: Prueba Ribbon
+2025-04-22 10:44:56.299 a. m.	Marketing	Warning	The relationship for the configuration entity already exists
+2025-04-22 10:44:56.397 a. m.	Marketing	Info	The configuration entity metadata information has been obtained.
+2025-04-22 10:44:56.652 a. m.	Marketing	Warning	The necessary components (Configuration) in the solution are already added.
+2025-04-22 10:44:56.836 a. m.	Marketing	Warning	The necessary components (Editor) in the solution are already added.
+2025-04-22 10:44:56.939 a. m.	Marketing	Warning	The necessary components (custom API) in the solution are already added.
+2025-04-22 10:45:05.048 a. m.	Marketing	Info	Added necessary components (Acceso directo) to the solution.
+2025-04-22 10:47:05.140 a. m.	Marketing	Error	It happened when generating the channel solution: Se ha terminado la conexión: Una conexión que se esperaba que se mantuviera activa fue cerrada por el servidor. 
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   en System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en Microsoft.Xrm.Tooling.Connector.CrmServiceClient.Execute(OrganizationRequest request)
+   en CreadorCanalesXrmToolbox.CRMOperations.ExportSolution(IOrganizationService service, String solutionName, String filePath, Boolean completePath) en C:\Users\Eric Vega\source\repos\CreadorCanalesXrmToolbox\CRMOperations.cs:línea 279
+   en CreadorCanalesXrmToolbox.MyCustomChannelControl.<BtnCreateSolution_Click>b__55_0(BackgroundWorker worker, DoWorkEventArgs eventWorker) en C:\Users\Eric Vega\source\repos\CreadorCanalesXrmToolbox\MyCustomChannelControl.cs:línea 1657
+2025-04-22 10:47:22.232 a. m.	Marketing	Info	The existing solution has been obtained: Prueba Ribbon
+2025-04-22 10:47:22.479 a. m.	Marketing	Warning	The relationship for the configuration entity already exists
+2025-04-22 10:47:22.560 a. m.	Marketing	Info	The configuration entity metadata information has been obtained.
+2025-04-22 10:47:22.655 a. m.	Marketing	Warning	The necessary components (Configuration) in the solution are already added.
+2025-04-22 10:47:22.817 a. m.	Marketing	Warning	The necessary components (Editor) in the solution are already added.
+2025-04-22 10:47:22.914 a. m.	Marketing	Warning	The necessary components (custom API) in the solution are already added.
+2025-04-22 10:47:23.116 a. m.	Marketing	Warning	The necessary components (Acceso directo) in the solution are already added.
+2025-04-22 10:47:46.952 a. m.	Marketing	Info	The solution has been exported
+2025-04-22 10:47:46.989 a. m.	Marketing	Info	The solution has been extracted from the zip file
+2025-04-22 10:47:47.005 a. m.	Marketing	Info	The XML document has been read successfully
+2025-04-22 10:47:47.007 a. m.	Marketing	Info	The message parts have been created correctly.
+2025-04-22 10:47:47.009 a. m.	Marketing	Info	The locations have been created correctly
+2025-04-22 10:47:47.014 a. m.	Marketing	Info	The channel has been created successfully
+2025-04-22 10:47:47.014 a. m.	Marketing	Info	Messages Parts: <msdyn_channelmessageparts><msdyn_channelmessagepart msdyn_channelmessagepartid="79d1a816-6990-47c4-844a-c4ae81f729a1"><msdyn_channeldefinitionid><msdyn_channeldefinitionid>2f00d0ae-11b8-474d-a857-951878e48162</msdyn_channeldefinitionid></msdyn_channeldefinitionid><msdyn_name>titulo</msdyn_name><msdyn_displayname>Título</msdyn_displayname><msdyn_description>Parte del mensaje para: Titulo</msdyn_description><msdyn_type>192350000</msdyn_type><msdyn_isrequired>1</msdyn_isrequired><msdyn_maxlength>100</msdyn_maxlength><statecode>0</statecode><statuscode>1</statuscode><msdyn_order>1</msdyn_order></msdyn_channelmessagepart><msdyn_channelmessagepart msdyn_channelmessagepartid="23dbe1d7-4efd-400b-a04c-3d3822e6e90c"><msdyn_channeldefinitionid><msdyn_channeldefinitionid>2f00d0ae-11b8-474d-a857-951878e48162</msdyn_channeldefinitionid></msdyn_channeldefinitionid><msdyn_name>cuenta</msdyn_name><msdyn_displayname>Cuenta</msdyn_displayname><msdyn_description>Parte del mensaje para: Cuenta</msdyn_description><msdyn_type>192350005</msdyn_type><msdyn_isrequired>1</msdyn_isrequired><msdyn_maxlength>100</msdyn_maxlength><statecode>0</statecode><statuscode>1</statuscode><msdyn_order>2</msdyn_order><msdyn_entityname>account</msdyn_entityname><msdyn_entityviewid>00000000-0000-0000-00aa-000010001002</msdyn_entityviewid></msdyn_channelmessagepart></msdyn_channelmessageparts>
+2025-04-22 10:47:47.014 a. m.	Marketing	Info	Locales: <msdyn_channeldefinitionlocales><msdyn_channeldefinitionlocale msdyn_channeldefinitionlocaleid="3838e6ef-5c91-4c5f-a6fa-4369550e42c2"><msdyn_channeldefinitionid>2f00d0ae-11b8-474d-a857-951878e48162</msdyn_channeldefinitionid><msdyn_localeid>3082</msdyn_localeid><msdyn_localecontent>{"ChannelDefinition.DisplayName":  "Canal de prueba","ChannelDefinition.Description":  "Descripción del canal de prueba","ChannelDefinition.SpecialConsentLabel":  "Consentimiento del canal de prueba","ChannelMessagePart.titulo.DisplayName":  "Titulo","ChannelMessagePart.titulo.Description":  "Título del mensaje","ChannelMessagePart.cuenta.DisplayName":  "Cuenta","ChannelMessagePart.cuenta.Description":  "Nombre de la cuenta"}</msdyn_localecontent></msdyn_channeldefinitionlocale><msdyn_channeldefinitionlocale msdyn_channeldefinitionlocaleid="c1a46eb0-0a2b-4888-b87a-a99c9fc0bc94"><msdyn_channeldefinitionid>2f00d0ae-11b8-474d-a857-951878e48162</msdyn_channeldefinitionid><msdyn_localeid>1033</msdyn_localeid><msdyn_localecontent>{"ChannelDefinition.DisplayName":  "Test Channel","ChannelDefinition.Description":  "Test Channel description","ChannelDefinition.SpecialConsentLabel":  "Test channel consent","ChannelMessagePart.titulo.DisplayName":  "Title","ChannelMessagePart.titulo.Description":  "Title of the message","ChannelMessagePart.cuenta.DisplayName":  "Account","ChannelMessagePart.cuenta.Description":  "Account name"}</msdyn_localecontent></msdyn_channeldefinitionlocale></msdyn_channeldefinitionlocales>
+2025-04-22 10:47:47.015 a. m.	Marketing	Info	Channel : <msdyn_channeldefinitions><msdyn_channeldefinition msdyn_channeldefinitionid="2f00d0ae-11b8-474d-a857-951878e48162"><msdyn_channeldefinitionexternalentity>crbdb_configuraciondeprueba</msdyn_channeldefinitionexternalentity><msdyn_channeldefinitionexternalformid>7d091b8b-e675-43db-95a8-cb574352fd17</msdyn_channeldefinitionexternalformid><msdyn_channeltype>Custom</msdyn_channeltype><msdyn_description>Solución para el canal de prueba</msdyn_description><msdyn_displayname>Nombre del canal de prueba</msdyn_displayname><msdyn_hasdeliveryreceipt>1</msdyn_hasdeliveryreceipt><msdyn_hasinbound>0</msdyn_hasinbound><msdyn_messageformid>f7b5d660-ea91-48b5-a27a-1cf813597fb2</msdyn_messageformid><msdyn_outboundendpointurltemplate>/cr65f_OutboundCustomApi</msdyn_outboundendpointurltemplate><msdyn_specialconsentrequired>0</msdyn_specialconsentrequired><msdyn_supportsaccount>0</msdyn_supportsaccount><msdyn_supportsattachment>1</msdyn_supportsattachment><msdyn_supportsbinary>1</msdyn_supportsbinary><statecode>0</statecode><statuscode>1</statuscode></msdyn_channeldefinition></msdyn_channeldefinitions>
+2025-04-22 10:47:47.017 a. m.	Marketing	Info	Customizations.xml file edited successfully
+2025-04-22 10:47:47.064 a. m.	Marketing	Info	New solution generated in a zip file
+2025-04-22 10:49:47.087 a. m.	Marketing	Error	It happened when generating the channel solution: Se ha terminado la conexión: Una conexión que se esperaba que se mantuviera activa fue cerrada por el servidor. 
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   en System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en Microsoft.Xrm.Tooling.Connector.CrmServiceClient.Execute(OrganizationRequest request)
+   en CreadorCanalesXrmToolbox.CRMOperations.ImportSolution(IOrganizationService servicio, String nombreSolucion, String rutaArchivo) en C:\Users\Eric Vega\source\repos\CreadorCanalesXrmToolbox\CRMOperations.cs:línea 294
+   en CreadorCanalesXrmToolbox.MyCustomChannelControl.<BtnCreateSolution_Click>b__55_0(BackgroundWorker worker, DoWorkEventArgs eventWorker) en C:\Users\Eric Vega\source\repos\CreadorCanalesXrmToolbox\MyCustomChannelControl.cs:línea 1780
+2025-04-22 11:00:05.621 a. m.	Marketing	Info	The existing solution has been obtained: Prueba Ribbon
+2025-04-22 11:00:05.976 a. m.	Marketing	Warning	The relationship for the configuration entity already exists
+2025-04-22 11:00:06.066 a. m.	Marketing	Info	The configuration entity metadata information has been obtained.
+2025-04-22 11:00:06.166 a. m.	Marketing	Warning	The necessary components (Configuration) in the solution are already added.
+2025-04-22 11:00:06.349 a. m.	Marketing	Warning	The necessary components (Editor) in the solution are already added.
+2025-04-22 11:00:06.448 a. m.	Marketing	Warning	The necessary components (custom API) in the solution are already added.
+2025-04-22 11:00:06.624 a. m.	Marketing	Warning	The necessary components (Acceso directo) in the solution are already added.
+2025-04-22 11:00:23.496 a. m.	Marketing	Info	The solution has been exported
+2025-04-22 11:00:23.521 a. m.	Marketing	Info	The solution has been extracted from the zip file
+2025-04-22 11:00:23.529 a. m.	Marketing	Info	The XML document has been read successfully
+2025-04-22 11:00:23.529 a. m.	Marketing	Info	The message parts have been created correctly.
+2025-04-22 11:00:23.530 a. m.	Marketing	Info	The locations have been created correctly
+2025-04-22 11:00:23.530 a. m.	Marketing	Info	The channel has been created successfully
+2025-04-22 11:00:23.530 a. m.	Marketing	Info	Messages Parts: <msdyn_channelmessageparts><msdyn_channelmessagepart msdyn_channelmessagepartid="79d1a816-6990-47c4-844a-c4ae81f729a1"><msdyn_channeldefinitionid><msdyn_channeldefinitionid>2f00d0ae-11b8-474d-a857-951878e48162</msdyn_channeldefinitionid></msdyn_channeldefinitionid><msdyn_name>titulo</msdyn_name><msdyn_displayname>Título</msdyn_displayname><msdyn_description>Parte del mensaje para: Titulo</msdyn_description><msdyn_type>192350000</msdyn_type><msdyn_isrequired>1</msdyn_isrequired><msdyn_maxlength>100</msdyn_maxlength><statecode>0</statecode><statuscode>1</statuscode><msdyn_order>1</msdyn_order></msdyn_channelmessagepart><msdyn_channelmessagepart msdyn_channelmessagepartid="23dbe1d7-4efd-400b-a04c-3d3822e6e90c"><msdyn_channeldefinitionid><msdyn_channeldefinitionid>2f00d0ae-11b8-474d-a857-951878e48162</msdyn_channeldefinitionid></msdyn_channeldefinitionid><msdyn_name>cuenta</msdyn_name><msdyn_displayname>Cuenta</msdyn_displayname><msdyn_description>Parte del mensaje para: Cuenta</msdyn_description><msdyn_type>192350005</msdyn_type><msdyn_isrequired>1</msdyn_isrequired><msdyn_maxlength>100</msdyn_maxlength><statecode>0</statecode><statuscode>1</statuscode><msdyn_order>2</msdyn_order><msdyn_entityname>account</msdyn_entityname><msdyn_entityviewid>00000000-0000-0000-00aa-000010001002</msdyn_entityviewid></msdyn_channelmessagepart></msdyn_channelmessageparts>
+2025-04-22 11:00:23.530 a. m.	Marketing	Info	Locales: <msdyn_channeldefinitionlocales><msdyn_channeldefinitionlocale msdyn_channeldefinitionlocaleid="3838e6ef-5c91-4c5f-a6fa-4369550e42c2"><msdyn_channeldefinitionid>2f00d0ae-11b8-474d-a857-951878e48162</msdyn_channeldefinitionid><msdyn_localeid>3082</msdyn_localeid><msdyn_localecontent>{"ChannelDefinition.DisplayName":  "Canal de prueba","ChannelDefinition.Description":  "Descripción del canal de prueba","ChannelDefinition.SpecialConsentLabel":  "Consentimiento del canal de prueba","ChannelMessagePart.titulo.DisplayName":  "Titulo","ChannelMessagePart.titulo.Description":  "Título del mensaje","ChannelMessagePart.cuenta.DisplayName":  "Cuenta","ChannelMessagePart.cuenta.Description":  "Nombre de la cuenta"}</msdyn_localecontent></msdyn_channeldefinitionlocale><msdyn_channeldefinitionlocale msdyn_channeldefinitionlocaleid="c1a46eb0-0a2b-4888-b87a-a99c9fc0bc94"><msdyn_channeldefinitionid>2f00d0ae-11b8-474d-a857-951878e48162</msdyn_channeldefinitionid><msdyn_localeid>1033</msdyn_localeid><msdyn_localecontent>{"ChannelDefinition.DisplayName":  "Test Channel","ChannelDefinition.Description":  "Test Channel description","ChannelDefinition.SpecialConsentLabel":  "Test channel consent","ChannelMessagePart.titulo.DisplayName":  "Title","ChannelMessagePart.titulo.Description":  "Title of the message","ChannelMessagePart.cuenta.DisplayName":  "Account","ChannelMessagePart.cuenta.Description":  "Account name"}</msdyn_localecontent></msdyn_channeldefinitionlocale></msdyn_channeldefinitionlocales>
+2025-04-22 11:00:23.531 a. m.	Marketing	Info	Channel : <msdyn_channeldefinitions><msdyn_channeldefinition msdyn_channeldefinitionid="2f00d0ae-11b8-474d-a857-951878e48162"><msdyn_channeldefinitionexternalentity>crbdb_configuraciondeprueba</msdyn_channeldefinitionexternalentity><msdyn_channeldefinitionexternalformid>7d091b8b-e675-43db-95a8-cb574352fd17</msdyn_channeldefinitionexternalformid><msdyn_channeltype>Custom</msdyn_channeltype><msdyn_description>Solución para el canal de prueba</msdyn_description><msdyn_displayname>Nombre del canal de prueba</msdyn_displayname><msdyn_hasdeliveryreceipt>1</msdyn_hasdeliveryreceipt><msdyn_hasinbound>0</msdyn_hasinbound><msdyn_messageformid>f7b5d660-ea91-48b5-a27a-1cf813597fb2</msdyn_messageformid><msdyn_outboundendpointurltemplate>/cr65f_OutboundCustomApi</msdyn_outboundendpointurltemplate><msdyn_specialconsentrequired>0</msdyn_specialconsentrequired><msdyn_supportsaccount>0</msdyn_supportsaccount><msdyn_supportsattachment>1</msdyn_supportsattachment><msdyn_supportsbinary>1</msdyn_supportsbinary><statecode>0</statecode><statuscode>1</statuscode></msdyn_channeldefinition></msdyn_channeldefinitions>
+2025-04-22 11:00:23.532 a. m.	Marketing	Info	Customizations.xml file edited successfully
+2025-04-22 11:00:23.582 a. m.	Marketing	Info	New solution generated in a zip file
+2025-04-22 11:02:18.071 a. m.	Marketing	Info	Solution imported successfully
+2025-04-22 11:02:32.010 a. m.	Marketing	Info	Solution published successfully
+2025-04-22 11:02:32.025 a. m.	Marketing	Info	Temporary files deleted...
+2025-04-22 11:45:26.398 a. m.	Marketing	Info	Settings found and loaded
+2025-04-22 11:47:13.695 a. m.	Marketing	Info	Settings found and loaded
+2025-04-22 11:55:11.585 a. m.	Marketing	Info	Settings found and loaded
+2025-04-22 11:59:55.418 a. m.	Marketing	Info	Settings found and loaded
+2025-04-22 12:00:44.349 p. m.	Marketing	Info	Settings found and loaded
+2025-04-22 12:08:47.781 p. m.	Marketing	Info	Settings found and loaded
+2025-04-22 04:11:53.277 p. m.	Marketing Demo #2	Info	Settings found and loaded
+2025-04-28 05:14:19.882 p. m.	Marketing Demo #2	Info	Settings found and loaded
+2025-04-28 05:16:52.494 p. m.	Marketing Demo #2	Info	Settings found and loaded
+2025-04-28 05:18:03.964 p. m.	Marketing Demo #2	Info	Settings found and loaded
+2025-05-05 08:10:29.042 a. m.	Marketing Demo #2	Info	Settings found and loaded
+2025-05-06 04:57:21.669 p. m.	Marketing Demo #2	Info	Settings found and loaded
+2025-05-06 05:01:11.668 p. m.	Marketing Demo #2	Info	Settings found and loaded
+2025-05-07 02:21:15.204 p. m.	Marketing Demo #2	Info	Settings found and loaded
+2025-05-07 03:43:47.849 p. m.	Marketing Demo #2	Info	Settings found and loaded
