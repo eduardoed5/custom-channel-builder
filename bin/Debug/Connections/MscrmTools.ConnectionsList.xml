@@ -2,9 +2,9 @@
 <ConnectionsList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Files>
     <ConnectionFile>
-      <LastUsed>0001-01-01T00:00:00</LastUsed>
+      <LastUsed>2025-05-09T08:33:19.9363518-05:00</LastUsed>
       <Name>Default</Name>
-      <Path>C:\Users\Eric Vega\source\repos\CreadorCanalesXrmToolbox\bin\Debug\Connections\ConnectionsList.Default.xml</Path>
+      <Path>C:\Users\Eric Vega\source\repos\CreadorCanalesXrmToolbox\generate-custom-channel\bin\Debug\Connections\ConnectionsList.Default.xml</Path>
     </ConnectionFile>
   </Files>
 </ConnectionsList>

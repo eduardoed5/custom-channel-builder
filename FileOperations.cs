@@ -135,8 +135,8 @@ namespace CreatorChannelsXrmToolbox
         public static void CopyFile(string sourcePath, string sourceFileName, string destinationPath)
         {
             string _sourceFile = sourcePath + "\\" + sourceFileName;
-            string _destinationFile = destinationPath + "\\" + sourceFileName.Replace("_edit", "");
-            File.Copy(_sourceFile, destinationPath, overwrite: true);
+             string _destinationFile = destinationPath + "\\" + sourceFileName.Replace("_edit", "");
+            File.Copy(_sourceFile, _destinationFile, overwrite: true);
         }
 
     }

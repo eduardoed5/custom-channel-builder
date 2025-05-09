@@ -3,6 +3,6 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartArguments>/overridepath:.</StartArguments>
     <StartAction>Program</StartAction>
-    <StartProgram>C:\Users\Eric Vega\source\repos\CreadorCanalesXrmToolbox\bin\Debug\XrmToolBox.exe</StartProgram>
+    <StartProgram>C:\Users\Eric Vega\source\repos\CreadorCanalesXrmToolbox\generate-custom-channel\bin\Debug\XrmToolBox.exe</StartProgram>
   </PropertyGroup>
 </Project>
