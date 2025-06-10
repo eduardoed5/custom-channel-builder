@@ -13,11 +13,14 @@ namespace CreatorChannelsXrmToolbox.Model
         public Guid LocaleIdENG { get; set; }
         public EntityData ConfigurationEntity { get; set; }
         public FormData ConfigurationForm { get; set; }
+        public EntityData AccountEntity { get; set; }
+        public FormData AccountForm { get; set; }
         public List<MessagePartData> MessagesParts { get; set; }
         public EntityData EditorEntity { get; set; }
         public FormData EditorForm { get; set; }
         public LabelData LabelAlternative { get; set; }
         public LabelData LabelEnglish { get; set; }
+        public string ChannelType { get; set; }
         public bool ExistingSolution { get; set; }
         public SolutionData Solution { get; set; }
         public string SolutionName { get; set; }

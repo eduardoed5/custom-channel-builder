@@ -23,6 +23,8 @@ namespace CreatorChannelsXrmToolbox.Model
         public bool AllowBinary { get; set; }
         public int State { get; set; }
         public int Status { get; set; }
+        public string AccountEntity { get; set; }
+        public Guid AccountForm { get; set; }
 
         public ChannelXmlData() { }
         public ChannelXmlData(ChannelData channel)
@@ -30,7 +32,7 @@ namespace CreatorChannelsXrmToolbox.Model
             Id = channel.ChannelId;
             DisplayName = channel.ChannelName;
             Description = channel.Description;
-            Type = "Custom";
+            Type = channel.ChannelType;
             EndpointOutput = "/" + channel.CustomAPI.UniqueName;
             AllowInbound = channel.AllowInbound;
             AllowDelivery = channel.AllowDelivery;
@@ -43,6 +45,17 @@ namespace CreatorChannelsXrmToolbox.Model
             AllowBinary = channel.AllowBinary;
             State = 0;
             Status = 1;
+            if (channel.AccountEntity != null && channel.ChannelType.Equals("SMS"))
+            {
+                AccountEntity = channel.AccountEntity.LogicalName;
+                AccountForm = channel.AccountForm.Id;
+            }
+            else
+            {
+                AccountEntity = null;
+                AccountForm = Guid.Empty;
+            }
+
         }
     }
 }

@@ -154,6 +154,13 @@
             this.BtnCopySolution = new System.Windows.Forms.Button();
             this.CmbSolutionType = new System.Windows.Forms.ComboBox();
             this.LblSolutionType = new System.Windows.Forms.Label();
+            this.CmbChannelType = new System.Windows.Forms.ComboBox();
+            this.LblChannelType = new System.Windows.Forms.Label();
+            this.GroupSMSConfig = new System.Windows.Forms.GroupBox();
+            this.CmbAccountForm = new System.Windows.Forms.ComboBox();
+            this.LblAccountForm = new System.Windows.Forms.Label();
+            this.CmbAccountEntity = new System.Windows.Forms.ComboBox();
+            this.LblAccountEntity = new System.Windows.Forms.Label();
             this.toolStripMenu.SuspendLayout();
             this.GroupMessageEditor.SuspendLayout();
             this.GroupLocalization.SuspendLayout();
@@ -164,6 +171,7 @@
             this.GroupConfig.SuspendLayout();
             this.GroupChannel.SuspendLayout();
             this.GroupAdditionalEntities.SuspendLayout();
+            this.GroupSMSConfig.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStripMenu
@@ -1037,6 +1045,8 @@
             // 
             // GroupChannel
             // 
+            this.GroupChannel.Controls.Add(this.LblChannelType);
+            this.GroupChannel.Controls.Add(this.CmbChannelType);
             this.GroupChannel.Controls.Add(this.CheckSpecialConsent);
             this.GroupChannel.Controls.Add(this.CheckBinary);
             this.GroupChannel.Controls.Add(this.CheckAttachment);
@@ -1100,7 +1110,7 @@
             // 
             this.CmbSolutionName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbSolutionName.FormattingEnabled = true;
-            this.CmbSolutionName.Location = new System.Drawing.Point(160, 90);
+            this.CmbSolutionName.Location = new System.Drawing.Point(158, 114);
             this.CmbSolutionName.Name = "CmbSolutionName";
             this.CmbSolutionName.Size = new System.Drawing.Size(367, 24);
             this.CmbSolutionName.TabIndex = 15;
@@ -1110,7 +1120,7 @@
             // 
             this.CheckSolutionExists.AutoSize = true;
             this.CheckSolutionExists.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckSolutionExists.Location = new System.Drawing.Point(10, 28);
+            this.CheckSolutionExists.Location = new System.Drawing.Point(19, 58);
             this.CheckSolutionExists.Name = "CheckSolutionExists";
             this.CheckSolutionExists.Size = new System.Drawing.Size(172, 20);
             this.CheckSolutionExists.TabIndex = 14;
@@ -1143,17 +1153,17 @@
             // TxtChannelDescription
             // 
             this.TxtChannelDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtChannelDescription.Location = new System.Drawing.Point(159, 182);
+            this.TxtChannelDescription.Location = new System.Drawing.Point(159, 203);
             this.TxtChannelDescription.Multiline = true;
             this.TxtChannelDescription.Name = "TxtChannelDescription";
-            this.TxtChannelDescription.Size = new System.Drawing.Size(367, 122);
+            this.TxtChannelDescription.Size = new System.Drawing.Size(367, 101);
             this.TxtChannelDescription.TabIndex = 10;
             // 
             // LblChannelDescription
             // 
             this.LblChannelDescription.AutoSize = true;
             this.LblChannelDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblChannelDescription.Location = new System.Drawing.Point(6, 190);
+            this.LblChannelDescription.Location = new System.Drawing.Point(16, 206);
             this.LblChannelDescription.Name = "LblChannelDescription";
             this.LblChannelDescription.Size = new System.Drawing.Size(83, 16);
             this.LblChannelDescription.TabIndex = 9;
@@ -1163,7 +1173,7 @@
             // 
             this.CmbCustomAPI.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbCustomAPI.FormattingEnabled = true;
-            this.CmbCustomAPI.Location = new System.Drawing.Point(160, 152);
+            this.CmbCustomAPI.Location = new System.Drawing.Point(159, 172);
             this.CmbCustomAPI.Name = "CmbCustomAPI";
             this.CmbCustomAPI.Size = new System.Drawing.Size(366, 24);
             this.CmbCustomAPI.TabIndex = 8;
@@ -1172,7 +1182,7 @@
             // 
             this.LblCustomAPI.AutoSize = true;
             this.LblCustomAPI.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCustomAPI.Location = new System.Drawing.Point(6, 158);
+            this.LblCustomAPI.Location = new System.Drawing.Point(16, 180);
             this.LblCustomAPI.Name = "LblCustomAPI";
             this.LblCustomAPI.Size = new System.Drawing.Size(87, 16);
             this.LblCustomAPI.TabIndex = 7;
@@ -1182,7 +1192,7 @@
             // 
             this.LblChannelName.AutoSize = true;
             this.LblChannelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblChannelName.Location = new System.Drawing.Point(5, 126);
+            this.LblChannelName.Location = new System.Drawing.Point(16, 150);
             this.LblChannelName.Name = "LblChannelName";
             this.LblChannelName.Size = new System.Drawing.Size(107, 16);
             this.LblChannelName.TabIndex = 6;
@@ -1191,7 +1201,7 @@
             // TxtChannelName
             // 
             this.TxtChannelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtChannelName.Location = new System.Drawing.Point(160, 123);
+            this.TxtChannelName.Location = new System.Drawing.Point(159, 144);
             this.TxtChannelName.Name = "TxtChannelName";
             this.TxtChannelName.Size = new System.Drawing.Size(366, 22);
             this.TxtChannelName.TabIndex = 5;
@@ -1199,7 +1209,7 @@
             // TxtSolutionName
             // 
             this.TxtSolutionName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSolutionName.Location = new System.Drawing.Point(160, 92);
+            this.TxtSolutionName.Location = new System.Drawing.Point(158, 116);
             this.TxtSolutionName.Name = "TxtSolutionName";
             this.TxtSolutionName.Size = new System.Drawing.Size(367, 22);
             this.TxtSolutionName.TabIndex = 4;
@@ -1209,17 +1219,17 @@
             this.LblSolutionName.AccessibleRole = System.Windows.Forms.AccessibleRole.IpAddress;
             this.LblSolutionName.AutoSize = true;
             this.LblSolutionName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblSolutionName.Location = new System.Drawing.Point(6, 95);
+            this.LblSolutionName.Location = new System.Drawing.Point(16, 122);
             this.LblSolutionName.Name = "LblSolutionName";
-            this.LblSolutionName.Size = new System.Drawing.Size(103, 16);
+            this.LblSolutionName.Size = new System.Drawing.Size(106, 16);
             this.LblSolutionName.TabIndex = 3;
-            this.LblSolutionName.Text = "Solution name *:";
+            this.LblSolutionName.Text = "Solution Name *:";
             // 
             // LblPublisher
             // 
             this.LblPublisher.AutoSize = true;
             this.LblPublisher.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblPublisher.Location = new System.Drawing.Point(7, 60);
+            this.LblPublisher.Location = new System.Drawing.Point(16, 93);
             this.LblPublisher.Name = "LblPublisher";
             this.LblPublisher.Size = new System.Drawing.Size(74, 16);
             this.LblPublisher.TabIndex = 2;
@@ -1229,7 +1239,7 @@
             // 
             this.CmbPublisher.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbPublisher.FormattingEnabled = true;
-            this.CmbPublisher.Location = new System.Drawing.Point(160, 57);
+            this.CmbPublisher.Location = new System.Drawing.Point(158, 85);
             this.CmbPublisher.Name = "CmbPublisher";
             this.CmbPublisher.Size = new System.Drawing.Size(366, 24);
             this.CmbPublisher.TabIndex = 1;
@@ -1253,17 +1263,17 @@
             this.GroupAdditionalEntities.Controls.Add(this.CmbEntityAdditional);
             this.GroupAdditionalEntities.Controls.Add(this.LblEntityAdditional);
             this.GroupAdditionalEntities.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GroupAdditionalEntities.Location = new System.Drawing.Point(1150, 43);
+            this.GroupAdditionalEntities.Location = new System.Drawing.Point(1150, 157);
             this.GroupAdditionalEntities.Name = "GroupAdditionalEntities";
-            this.GroupAdditionalEntities.Size = new System.Drawing.Size(534, 737);
+            this.GroupAdditionalEntities.Size = new System.Drawing.Size(534, 623);
             this.GroupAdditionalEntities.TabIndex = 23;
             this.GroupAdditionalEntities.TabStop = false;
-            this.GroupAdditionalEntities.Text = "Step #6: Add additional entities to the solution (Optional) ";
+            this.GroupAdditionalEntities.Text = "Step #7: Add additional entities to the solution (Optional) ";
             // 
             // btnDeleteComponent
             // 
             this.btnDeleteComponent.Image = global::CreatorChannelsXrmToolbox.Properties.Resources.delele_close;
-            this.btnDeleteComponent.Location = new System.Drawing.Point(397, 675);
+            this.btnDeleteComponent.Location = new System.Drawing.Point(397, 561);
             this.btnDeleteComponent.Name = "btnDeleteComponent";
             this.btnDeleteComponent.Size = new System.Drawing.Size(131, 56);
             this.btnDeleteComponent.TabIndex = 11;
@@ -1306,7 +1316,7 @@
             this.ListEntitiesAdd.Location = new System.Drawing.Point(10, 194);
             this.ListEntitiesAdd.MultiSelect = false;
             this.ListEntitiesAdd.Name = "ListEntitiesAdd";
-            this.ListEntitiesAdd.Size = new System.Drawing.Size(518, 475);
+            this.ListEntitiesAdd.Size = new System.Drawing.Size(518, 363);
             this.ListEntitiesAdd.TabIndex = 34;
             this.ListEntitiesAdd.UseCompatibleStateImageBehavior = false;
             this.ListEntitiesAdd.View = System.Windows.Forms.View.Details;
@@ -1451,11 +1461,91 @@
             this.LblSolutionType.TabIndex = 29;
             this.LblSolutionType.Text = "Solution Type:";
             // 
+            // CmbChannelType
+            // 
+            this.CmbChannelType.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbChannelType.FormattingEnabled = true;
+            this.CmbChannelType.Items.AddRange(new object[] {
+            "Custom",
+            "SMS"});
+            this.CmbChannelType.Location = new System.Drawing.Point(160, 21);
+            this.CmbChannelType.Name = "CmbChannelType";
+            this.CmbChannelType.Size = new System.Drawing.Size(366, 24);
+            this.CmbChannelType.TabIndex = 20;
+            this.CmbChannelType.SelectedValueChanged += new System.EventHandler(this.CmbChannelType_SelectedValueChanged);
+            // 
+            // LblChannelType
+            // 
+            this.LblChannelType.AutoSize = true;
+            this.LblChannelType.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblChannelType.Location = new System.Drawing.Point(16, 29);
+            this.LblChannelType.Name = "LblChannelType";
+            this.LblChannelType.Size = new System.Drawing.Size(102, 16);
+            this.LblChannelType.TabIndex = 21;
+            this.LblChannelType.Text = "Channel Type *:";
+            // 
+            // GroupSMSConfig
+            // 
+            this.GroupSMSConfig.Controls.Add(this.CmbAccountForm);
+            this.GroupSMSConfig.Controls.Add(this.LblAccountForm);
+            this.GroupSMSConfig.Controls.Add(this.CmbAccountEntity);
+            this.GroupSMSConfig.Controls.Add(this.LblAccountEntity);
+            this.GroupSMSConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GroupSMSConfig.Location = new System.Drawing.Point(1150, 43);
+            this.GroupSMSConfig.Name = "GroupSMSConfig";
+            this.GroupSMSConfig.Size = new System.Drawing.Size(528, 107);
+            this.GroupSMSConfig.TabIndex = 30;
+            this.GroupSMSConfig.TabStop = false;
+            this.GroupSMSConfig.Text = "Step #6: Set the configuration for channel instance account (Only SMS)";
+            // 
+            // CmbAccountForm
+            // 
+            this.CmbAccountForm.DisplayMember = "Nombre";
+            this.CmbAccountForm.Enabled = false;
+            this.CmbAccountForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbAccountForm.FormattingEnabled = true;
+            this.CmbAccountForm.Location = new System.Drawing.Point(186, 58);
+            this.CmbAccountForm.Name = "CmbAccountForm";
+            this.CmbAccountForm.Size = new System.Drawing.Size(336, 24);
+            this.CmbAccountForm.TabIndex = 3;
+            this.CmbAccountForm.ValueMember = "Id";
+            // 
+            // LblAccountForm
+            // 
+            this.LblAccountForm.AutoSize = true;
+            this.LblAccountForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAccountForm.Location = new System.Drawing.Point(5, 66);
+            this.LblAccountForm.Name = "LblAccountForm";
+            this.LblAccountForm.Size = new System.Drawing.Size(135, 16);
+            this.LblAccountForm.TabIndex = 2;
+            this.LblAccountForm.Text = "Select account form *:";
+            // 
+            // CmbAccountEntity
+            // 
+            this.CmbAccountEntity.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbAccountEntity.FormattingEnabled = true;
+            this.CmbAccountEntity.Location = new System.Drawing.Point(186, 25);
+            this.CmbAccountEntity.Name = "CmbAccountEntity";
+            this.CmbAccountEntity.Size = new System.Drawing.Size(336, 24);
+            this.CmbAccountEntity.TabIndex = 1;
+            this.CmbAccountEntity.SelectedValueChanged += new System.EventHandler(this.CmbAccountEntity_SelectedValueChanged);
+            // 
+            // LblAccountEntity
+            // 
+            this.LblAccountEntity.AutoSize = true;
+            this.LblAccountEntity.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAccountEntity.Location = new System.Drawing.Point(6, 28);
+            this.LblAccountEntity.Name = "LblAccountEntity";
+            this.LblAccountEntity.Size = new System.Drawing.Size(140, 16);
+            this.LblAccountEntity.TabIndex = 0;
+            this.LblAccountEntity.Text = "Select account entity *:";
+            // 
             // MyCustomChannelControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.Controls.Add(this.GroupSMSConfig);
             this.Controls.Add(this.LblSolutionType);
             this.Controls.Add(this.CmbSolutionType);
             this.Controls.Add(this.BtnCopySolution);
@@ -1495,6 +1585,8 @@
             this.GroupChannel.PerformLayout();
             this.GroupAdditionalEntities.ResumeLayout(false);
             this.GroupAdditionalEntities.PerformLayout();
+            this.GroupSMSConfig.ResumeLayout(false);
+            this.GroupSMSConfig.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1627,5 +1719,12 @@
         private System.Windows.Forms.Button BtnCopySolution;
         private System.Windows.Forms.ComboBox CmbSolutionType;
         private System.Windows.Forms.Label LblSolutionType;
+        private System.Windows.Forms.Label LblChannelType;
+        private System.Windows.Forms.ComboBox CmbChannelType;
+        private System.Windows.Forms.GroupBox GroupSMSConfig;
+        private System.Windows.Forms.ComboBox CmbAccountForm;
+        private System.Windows.Forms.Label LblAccountForm;
+        private System.Windows.Forms.ComboBox CmbAccountEntity;
+        private System.Windows.Forms.Label LblAccountEntity;
     }
 }

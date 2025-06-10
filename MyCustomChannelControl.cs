@@ -160,6 +160,7 @@ namespace CreatorChannelsXrmToolbox
                 CmbPartMessageEntity.Items.Add(_item);
                 CmbEditorEntity.Items.Add(_item);
                 CmbEntityAdditional.Items.Add(_item);
+                CmbAccountEntity.Items.Add(_item);
             }
         }
 
@@ -225,6 +226,7 @@ namespace CreatorChannelsXrmToolbox
                         _response.Entities = _entities;
                         _response.Apis = _apis;
                         _response.Languages = _languages;
+                        CmbChannelType.SelectedText = "Custom";
                         worker.ReportProgress(-1, "Loading controls...");
                         eventWorker.Result = _response;
                     }
@@ -258,6 +260,7 @@ namespace CreatorChannelsXrmToolbox
                         TxtCopySolution.Enabled = false;
                         BtnCopySolution.Enabled = false;
                         TxtCopySolution.Text = "";
+                        GroupSMSConfig.Enabled = false;
                     }
                     else
                         ShowErrorDialog(_response.Exception, "Error", _response.Message, true);
@@ -509,6 +512,33 @@ namespace CreatorChannelsXrmToolbox
             foreach (FormData _item in list)
             {
                 CmbEditorForm.Items.Add(_item);
+            }
+        }
+
+
+        /// <summary>
+        /// Load the list of account forms
+        /// </summary>
+        /// <param name="list">List of account forms</param>
+        private void LoadFormsAccount(List<FormData> list)
+        {
+            CmbAccountForm.Items.Clear();
+            foreach (FormData _item in list)
+            {
+                CmbAccountForm.Items.Add(_item);
+            }
+        }
+
+        /// <summary>
+        /// Load the list of channel instance account form
+        /// </summary>
+        /// <param name="list">List of channel instance account forms</param>
+        private void LoadFormsSMSAccount(List<FormData> list)
+        {
+            CmbAccountForm.Items.Clear();
+            foreach (FormData _item in list)
+            {
+                CmbAccountForm.Items.Add(_item);
             }
         }
 
@@ -1138,6 +1168,12 @@ namespace CreatorChannelsXrmToolbox
             CheckPartMessageALT.Checked = false;
             CheckPartMessageENG.Checked = false;
 
+            CmbAccountEntity.Focus();
+            CmbAccountEntity.SelectedText = "";
+
+            CmbAccountForm.Focus();
+            CmbAccountForm.SelectedText = "";
+
             ListMessageType.SelectedItem = null;
             TxtPartDisplayNameALT.Text = "";
             TxtPartDescriptionALT.Text = "";
@@ -1170,10 +1206,15 @@ namespace CreatorChannelsXrmToolbox
             CheckAttachment.Checked = false;
             CheckBinary.Checked = false;
             CheckSpecialConsent.Checked = false;
-            CmbConfigEntity.Focus();
-
             CmbEntityAdditional.Focus();
             CmbEntityAdditional.SelectedText = "";
+
+            CmbChannelType.Focus();
+            CmbChannelType.SelectedText = "Custom";
+            GroupSMSConfig.Enabled = false;
+
+            CmbConfigEntity.Focus();
+
 
             CheckAllComponent.Checked = false;
             CheckAllComponent.Enabled = false;
@@ -1212,7 +1253,10 @@ namespace CreatorChannelsXrmToolbox
                 LocaleIdENG = _generatedLocaleIdENG,
                 ConfigurationEntity = (EntityData)CmbConfigEntity.SelectedItem,
                 ConfigurationForm = (FormData)CmbConfigForm.SelectedItem,
+                AccountEntity = (EntityData)CmbAccountEntity.SelectedItem,
+                AccountForm = (FormData)CmbAccountForm.SelectedItem,
                 ExistingSolution = CheckSolutionExists.Checked,
+                ChannelType = CmbChannelType.SelectedIndex == 0 ? "Custom" : "SMS",
                 Publisher = (Publisher)CmbPublisher.SelectedItem,
                 ChannelName = TxtChannelName.Text,
                 CustomAPI = (CustomAPI)CmbCustomAPI.SelectedItem,
@@ -1387,6 +1431,12 @@ namespace CreatorChannelsXrmToolbox
             CheckInbound.Checked = channel.AllowInbound;
             CheckDelivery.Checked = channel.AllowDelivery;
             CheckSpecialConsent.Checked = channel.RequiresSpecialConsent;
+            CmbChannelType.SelectedIndex = channel.ChannelType.Equals("SMS") ? 1 : 0;
+
+            if (channel.ChannelType.Equals("SMS"))
+                GroupSMSConfig.Enabled = true;
+            else
+                GroupSMSConfig.Enabled = false;
 
             //Assign message parts in the ListView
             ListMessagesParts.Items.Clear();
@@ -1488,6 +1538,39 @@ namespace CreatorChannelsXrmToolbox
                 CheckMessageEditor.Checked = false;
             }
 
+
+            // Assign account
+            if (CmbChannelType.SelectedIndex == 1)
+            {
+                if (channel.AccountEntity != null)
+                {
+
+                    EntityData _accountEntity = CmbAccountEntity.Items.Cast<EntityData>().FirstOrDefault(x => x.Code == channel.AccountEntity.Code);
+                    CmbAccountEntity.SelectedItem = _accountEntity;
+
+                    if (channel.AccountForm != null)
+                    {
+                        FormData _accountForm = CmbAccountForm.Items.Cast<FormData>().FirstOrDefault(x => x.Id == channel.AccountForm.Id);
+                        CmbAccountForm.SelectedItem = _accountForm;
+                        CmbAccountForm.Enabled = true;
+                    }
+                    else
+                        CmbAccountForm.Enabled = false;
+                }
+                else
+                {
+                    CmbAccountEntity.SelectedItem = null;
+                    CmbAccountForm.SelectedItem = null;
+                }
+            }
+            else
+            {
+                CmbAccountEntity.SelectedItem = null;
+                CmbAccountForm.SelectedItem = null;
+            }
+
+
+
             // Assign labels
             if (channel.LabelAlternative != null)
             {
@@ -1577,6 +1660,17 @@ namespace CreatorChannelsXrmToolbox
                                 else
                                     _response.EditorForms = new List<FormData>();
 
+
+                                //Account Forms
+                                if (_channel.AccountEntity != null)
+                                {
+                                    List<FormData> _listAccountForms = CRMOperations.GetForms(Service, _channel.AccountEntity.Code);
+                                    _response.AccountForms = _listAccountForms;
+                                }
+                                else
+                                    _response.AccountForms = new List<FormData>();
+
+
                                 //Existing solutions
                                 if (_channel.ExistingSolution && _channel.Publisher != null)
                                 {
@@ -1609,8 +1703,10 @@ namespace CreatorChannelsXrmToolbox
                             ResponseOperationsRead _response = (ResponseOperationsRead)eventWorker.Result;
                             if (_response.State)
                             {
+                                NuevaConfiguracion();
                                 LoadForms(_response.ConfigurationForms);
                                 LoadFormsEditor(_response.EditorForms);
+                                LoadFormsAccount(_response.AccountForms);
                                 LoadSolutions(_response.Solutions);
 
                                 LoadInfoChannelControls(_response.Channel);
@@ -1747,7 +1843,9 @@ namespace CreatorChannelsXrmToolbox
                 MessageBox.Show("You must select a custom API.", "Step #5 - Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if (string.IsNullOrEmpty(TxtChannelDescription.Text))
                 MessageBox.Show("You must provide a description for the channel", "Step #5 - Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if (!CheckImportSolution.Checked || !CheckCopySolution.Checked)
+            else if ((CmbAccountEntity.SelectedItem == null || CmbAccountForm.SelectedItem == null) && CmbChannelType.SelectedIndex == 1)
+                MessageBox.Show("You must select an entity and a configuration account form", "Step #6 - Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (!CheckImportSolution.Checked && !CheckCopySolution.Checked)
                 MessageBox.Show("To generate the channel, you must indicate whether the solution will be imported or copied. Both cannot be deselected.", "Review - Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if (CheckCopySolution.Checked && TxtCopySolution.Text == "")
                 MessageBox.Show("You must choose a folder where the copy of the solution will be stored.", "Review - Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -2120,6 +2218,104 @@ namespace CreatorChannelsXrmToolbox
                 {
                     string _directory = _folderDialog.SelectedPath;
                     TxtCopySolution.Text = _directory;
+                }
+            }
+        }
+
+        /// <summary>
+        /// This event occurs when the configuration instance account form ComboBox changes value
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CmbAccountEntity_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if (_processComboChanges)
+            {
+                if (CmbAccountEntity.SelectedItem != null)
+                {
+                    EntityData _selected = (EntityData)CmbAccountEntity.SelectedItem;
+                    WorkAsync(new WorkAsyncInfo
+                    {
+                        Message = "Loading forms...",
+                        Work = (worker, eventWorker) =>
+                        {
+                            ResponseOperations _response = new ResponseOperations();
+                            try
+                            {
+                                List<FormData> _forms = CRMOperations.GetForms(Service, (int)eventWorker.Argument);
+
+                                _response.Message = "The forms have been listed correctly.";
+                                _response.State = true;
+                                _response.Data = _forms;
+                                eventWorker.Result = _response;
+                            }
+                            catch (Exception _ex)
+                            {
+                                LogError("This has occurred when performing the Form Search:" + _ex.Message + " - " + _ex.StackTrace);
+                                _response.Message = "This has occurred when performing the Form Search";
+                                _response.State = false;
+                                _response.Exception = _ex;
+                                eventWorker.Result = _response;
+                            }
+                        },
+                        ProgressChanged = eventWorker =>
+                        {
+                            SetWorkingMessage(eventWorker.UserState.ToString());
+                        },
+                        PostWorkCallBack = eventWorker =>
+                        {
+                            ResponseOperations _response = (ResponseOperations)eventWorker.Result;
+                            if (_response.State)
+                            {
+                                List<FormData> _forms = (List<FormData>)_response.Data;
+                                if (_forms.Count > 0)
+                                {
+                                    LoadFormsSMSAccount(_forms);
+                                    CmbAccountForm.Enabled = true;
+                                }
+                                else
+                                {
+                                    CmbAccountForm.Enabled = false;
+                                    MessageBox.Show("No forms have been found in this entity", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                }
+                            }
+                            else
+                            {
+                                CmbAccountForm.Enabled = false;
+                                ShowErrorDialog(_response.Exception, "Error", _response.Message, true);
+                            }
+                        },
+                        AsyncArgument = _selected.Code
+                    });
+
+                }
+            }
+        }
+
+        /// <summary>
+        /// This event occurs when the channel type ComboBox changes value
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CmbChannelType_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if (_processComboChanges)
+            {
+                if (CmbChannelType.SelectedItem != null)
+                {
+                    CmbAccountEntity.Focus();
+                    CmbAccountEntity.SelectedText = "";
+
+                    CmbAccountForm.Focus();
+                    CmbAccountForm.SelectedText = "";
+                    CmbAccountForm.Enabled = false;
+
+                    if (CmbChannelType.SelectedItem.ToString().Equals("SMS"))
+                        GroupSMSConfig.Enabled = true;
+                    else
+                        GroupSMSConfig.Enabled = false;
+
+
                 }
             }
         }

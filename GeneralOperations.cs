@@ -52,8 +52,11 @@ namespace CreatorChannelsXrmToolbox
             XmlElement _rootNode = document.CreateElement("msdyn_channelmessageparts");
             document.DocumentElement.AppendChild(_rootNode);
 
+            int _total = listMessageParts.Count;
+
             foreach (MessagePartData _item in listMessageParts)
             {
+                int _orderNum = (_total + 1) - _item.Order.Value;
                 //Main element of the message part.
                 XmlElement _messagePart = document.CreateElement("msdyn_channelmessagepart");
                 _messagePart.SetAttribute("msdyn_channelmessagepartid", _item.Id.ToString().ToLower());
@@ -110,7 +113,7 @@ namespace CreatorChannelsXrmToolbox
                 if (_item.Order.HasValue)
                 {
                     XmlElement _order = document.CreateElement("msdyn_order");
-                    _order.InnerText = _item.Order.ToString();
+                    _order.InnerText = _orderNum.ToString();
                     _messagePart.AppendChild(_order);
                 }
 
@@ -204,6 +207,19 @@ namespace CreatorChannelsXrmToolbox
             XmlElement _configurationForm = document.CreateElement("msdyn_channeldefinitionexternalformid");
             _configurationForm.InnerText = channelInfo.ConfigurationForm.ToString().ToLower();
             _channel.AppendChild(_configurationForm);
+
+            if (channelInfo.AccountEntity != null && channelInfo.Type.Equals("SMS"))
+            {
+                //Account entity element
+                XmlElement _accountEntity = document.CreateElement("msdyn_channeldefinitionaccountexternalentity");
+                _accountEntity.InnerText = channelInfo.AccountEntity;
+                _channel.AppendChild(_accountEntity);
+
+                //Account form element
+                XmlElement _accountForm = document.CreateElement("msdyn_channeldefinitionaccountexternalformid");
+                _accountForm.InnerText = channelInfo.AccountForm.ToString().ToLower();
+                _channel.AppendChild(_accountForm);
+            }
 
             //Type element
             XmlElement _type = document.CreateElement("msdyn_channeltype");
