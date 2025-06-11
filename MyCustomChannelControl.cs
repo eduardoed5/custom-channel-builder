@@ -1909,7 +1909,7 @@ namespace CreatorChannelsXrmToolbox
                             if (!CRMOperations.ExistsRelationship(Service, "msdyn_extendedentityid_" + _channel.ConfigurationEntity.LogicalName))
                             {
                                 worker.ReportProgress(-1, "Creating a configuration relationship...");
-                                CRMOperations.CreateRelationship(Service, _channel.ConfigurationEntity.LogicalName, _principalSolution.Name);
+                                CRMOperations.CreateRelationship(Service, _channel.ConfigurationEntity.LogicalName, _principalSolution.Name,false);
                                 LogInfo("The relationship for the configuration entity has been created");
                             }
                             else
@@ -1929,6 +1929,36 @@ namespace CreatorChannelsXrmToolbox
                             }
                             else
                                 LogWarning("The necessary components (Configuration) in the solution are already added.");
+
+                            //only SMS
+                            if (_channel.ChannelType.Equals("SMS"))
+                            {
+                                worker.ReportProgress(-1, "Checking the configuration entity for the channel instance account relationship...");
+                                //Verifying the configuration entity
+                                if (!CRMOperations.ExistsRelationship(Service, "msdyn_extendedentityid_" + _channel.AccountEntity.LogicalName))
+                                {
+                                    worker.ReportProgress(-1, "Creating a configuration entity for the channel instance account relationship...");
+                                    CRMOperations.CreateRelationship(Service, _channel.AccountEntity.LogicalName, _principalSolution.Name, true);
+                                    LogInfo("The relationship for the configuration entity for the channel instance account entity has been created");
+                                }
+                                else
+                                    LogWarning("The relationship for the configuration entity for the channel instance account already exists");
+
+                                worker.ReportProgress(-1, "Getting configuration entity for the channel instance account metadata...");
+                                RetrieveEntityResponse _configurationAccountMetadata = CRMOperations.GetMetadata(Service, _channel.AccountEntity.LogicalName);
+                                LogInfo("The configuration entity for the channel instance account metadata information has been obtained.");
+
+                                // Using the before method before adding the component
+                                worker.ReportProgress(-1, "Checking the (Configuration entity for the channel instance account) component of the solution...");
+                                if (!CRMOperations.ExistsSolutionComponent(Service, _configurationAccountMetadata.EntityMetadata.MetadataId.Value, _principalSolution.Id))
+                                {
+                                    worker.ReportProgress(-1, "Adding configuration entity for the channel instance account to the solution...");
+                                    CRMOperations.AddSolutionComponent(Service, _configurationAccountMetadata.EntityMetadata.MetadataId.Value, 1, _principalSolution.Name, true);
+                                    LogInfo("The necessary components (Configuration entity for the channel instance account) were added to the solution.");
+                                }
+                                else
+                                    LogWarning("The necessary components (Configuration entity for the channel instance account) in the solution are already added.");
+                            }
 
                             //Checking the information for the text editor
                             if (_channel.EditorEntity != null && _channel.ConfigurationForm != null)

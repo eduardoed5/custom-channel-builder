@@ -265,12 +265,13 @@ namespace CreatorChannelsXrmToolbox
         /// <param name="servicio">API Service for Dynamics 365</param>
         /// <param name="entity">Logical name of the extended configuration entity</param>
         /// <param name="solution">Unique name of the solution</param>
-        public static void CreateRelationship(IOrganizationService servicio, string entity, string solution)
+        /// <param name="isAccountEntity">Indicates whether the relationship will be created with the account configuration entity</param>
+        public static void CreateRelationship(IOrganizationService servicio, string entity, string solution, bool isAccountEntity)
         {
             CreateOneToManyRequest _request = new CreateOneToManyRequest();
             OneToManyRelationshipMetadata _oneMuch = new OneToManyRelationshipMetadata
             {
-                ReferencingEntity = "msdyn_channelinstance",
+                ReferencingEntity = isAccountEntity ? "msdyn_channelinstancaccount" : "msdyn_channelinstance",
                 ReferencedEntity = entity,
                 ReferencingEntityNavigationPropertyName = $"msdyn_extendedentityid_{entity}",
                 SchemaName = $"msdyn_extendedentityid_{entity}"
