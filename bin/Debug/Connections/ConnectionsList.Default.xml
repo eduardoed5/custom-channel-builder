@@ -12,14 +12,14 @@
       <EnvironmentId>93aa9407-db94-e7ac-b800-b0fccd3ac415</EnvironmentId>
       <IsCustomAuth>false</IsCustomAuth>
       <IsFromSdkLoginCtrl>false</IsFromSdkLoginCtrl>
-      <LastUsedOn>2025-06-11 10:17:53</LastUsedOn>
+      <LastUsedOn>2025-06-19 10:24:44</LastUsedOn>
       <NewAuthType>ClientSecret</NewAuthType>
       <Organization>unqa40a455a661ef0119aed002248322</Organization>
       <OrganizationDataServiceUrl>https://org25fb5ca9.api.crm.dynamics.com/XRMServices/2011/OrganizationData.svc</OrganizationDataServiceUrl>
       <OrganizationFriendlyName>Marketing Trial</OrganizationFriendlyName>
       <OrganizationServiceUrl>https://org25fb5ca9.api.crm.dynamics.com/XRMServices/2011/Organization.svc</OrganizationServiceUrl>
       <OrganizationUrlName>org25fb5ca9</OrganizationUrlName>
-      <OrganizationVersion>9.2.25051.192</OrganizationVersion>
+      <OrganizationVersion>9.2.25053.200</OrganizationVersion>
       <OriginalUrl>https://org25fb5ca9.crm.dynamics.com/</OriginalUrl>
       <S2SClientSecret>vx49ok57FN2DSLNkPodNVc+pQ5EflWQhcAj2rrLzi9yaxG7cV+RSI05sMuuj+355</S2SClientSecret>
       <SavePassword>true</SavePassword>

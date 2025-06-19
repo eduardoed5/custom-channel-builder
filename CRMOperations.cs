@@ -271,7 +271,7 @@ namespace CreatorChannelsXrmToolbox
             CreateOneToManyRequest _request = new CreateOneToManyRequest();
             OneToManyRelationshipMetadata _oneMuch = new OneToManyRelationshipMetadata
             {
-                ReferencingEntity = isAccountEntity ? "msdyn_channelinstancaccount" : "msdyn_channelinstance",
+                ReferencingEntity = isAccountEntity ? "msdyn_channelinstanceaccount" : "msdyn_channelinstance",
                 ReferencedEntity = entity,
                 ReferencingEntityNavigationPropertyName = $"msdyn_extendedentityid_{entity}",
                 SchemaName = $"msdyn_extendedentityid_{entity}"

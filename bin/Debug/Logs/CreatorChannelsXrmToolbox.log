@@ -355,3 +355,43 @@ Exception rethrown at [0]:
 2025-06-10 12:12:08.452 p. m.	Marketing	Warning	Settings not found => a new settings file has been created!
 2025-06-11 09:04:28.814 a. m.	Marketing	Warning	Settings not found => a new settings file has been created!
 2025-06-11 10:17:53.565 a. m.	Marketing	Warning	Settings not found => a new settings file has been created!
+2025-06-19 10:00:03.073 a. m.	Marketing	Warning	Settings not found => a new settings file has been created!
+2025-06-19 10:22:31.256 a. m.	Marketing	Info	The existing solution has been obtained: Quantic
+2025-06-19 10:23:15.341 a. m.	Marketing	Info	The relationship for the configuration entity has been created
+2025-06-19 10:23:16.360 a. m.	Marketing	Info	The configuration entity metadata information has been obtained.
+2025-06-19 10:23:16.453 a. m.	Marketing	Warning	The necessary components (Configuration) in the solution are already added.
+2025-06-19 10:23:16.686 a. m.	Marketing	Error	It happened when generating the channel solution: Could not find an entity with specified entity logicalname: msdyn_channelinstancaccount 
+Server stack trace: 
+   en System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en Microsoft.Xrm.Tooling.Connector.CrmServiceClient.Execute(OrganizationRequest request)
+   en CreatorChannelsXrmToolbox.CRMOperations.CreateRelationship(IOrganizationService servicio, String entity, String solution, Boolean isAccountEntity) en C:\Users\Eric Vega\source\repos\CreadorCanalesXrmToolbox\generate-custom-channel\CRMOperations.cs:línea 287
+   en CreatorChannelsXrmToolbox.MyCustomChannelControl.<>c__DisplayClass57_0.<BtnCreateSolution_Click>b__0(BackgroundWorker worker, DoWorkEventArgs eventWorker) en C:\Users\Eric Vega\source\repos\CreadorCanalesXrmToolbox\generate-custom-channel\MyCustomChannelControl.cs:línea 1941
+2025-06-19 10:24:44.556 a. m.	Marketing	Warning	Settings not found => a new settings file has been created!
+2025-06-19 10:25:58.653 a. m.	Marketing	Info	The existing solution has been obtained: Quantic
+2025-06-19 10:25:58.741 a. m.	Marketing	Warning	The relationship for the configuration entity already exists
+2025-06-19 10:25:58.827 a. m.	Marketing	Info	The configuration entity metadata information has been obtained.
+2025-06-19 10:25:58.907 a. m.	Marketing	Warning	The necessary components (Configuration) in the solution are already added.
+2025-06-19 10:26:16.367 a. m.	Marketing	Info	The relationship for the configuration entity for the channel instance account entity has been created
+2025-06-19 10:26:17.232 a. m.	Marketing	Info	The configuration entity for the channel instance account metadata information has been obtained.
+2025-06-19 10:26:17.325 a. m.	Marketing	Warning	The necessary components (Configuration entity for the channel instance account) in the solution are already added.
+2025-06-19 10:26:19.350 a. m.	Marketing	Info	Added necessary components (Custom API) to the solution.
+2025-06-19 10:28:36.359 a. m.	Marketing	Info	The solution has been exported
+2025-06-19 10:28:36.450 a. m.	Marketing	Info	The solution has been extracted from the zip file
+2025-06-19 10:28:36.453 a. m.	Marketing	Info	The XML document has been read successfully
+2025-06-19 10:28:36.457 a. m.	Marketing	Info	The message parts have been created correctly.
+2025-06-19 10:28:36.459 a. m.	Marketing	Info	The locations have been created correctly
+2025-06-19 10:28:36.463 a. m.	Marketing	Info	The channel has been created successfully
+2025-06-19 10:28:36.463 a. m.	Marketing	Info	Messages Parts: <msdyn_channelmessageparts><msdyn_channelmessagepart msdyn_channelmessagepartid="22f96409-8f5e-4590-be70-209fbca49d43"><msdyn_channeldefinitionid><msdyn_channeldefinitionid>bf822eb9-35b4-46f5-8376-d55e48483711</msdyn_channeldefinitionid></msdyn_channeldefinitionid><msdyn_name>mensaje</msdyn_name><msdyn_displayname>Mensaje</msdyn_displayname><msdyn_description>Mensaje a enviar</msdyn_description><msdyn_type>192350000</msdyn_type><msdyn_isrequired>1</msdyn_isrequired><msdyn_maxlength>4000</msdyn_maxlength><statecode>0</statecode><statuscode>1</statuscode><msdyn_order>1</msdyn_order></msdyn_channelmessagepart></msdyn_channelmessageparts>
+2025-06-19 10:28:36.464 a. m.	Marketing	Info	Locales: <msdyn_channeldefinitionlocales><msdyn_channeldefinitionlocale msdyn_channeldefinitionlocaleid="b0ddd100-22b8-46bb-aa6e-4464125161bd"><msdyn_channeldefinitionid>bf822eb9-35b4-46f5-8376-d55e48483711</msdyn_channeldefinitionid><msdyn_localeid>3082</msdyn_localeid><msdyn_localecontent>{"ChannelDefinition.DisplayName":  "Quantic Connections","ChannelDefinition.Description":  "SMS por Quantic Connections","ChannelDefinition.SpecialConsentLabel":  "Consentimiento de SMS","ChannelMessagePart.mensaje.DisplayName":  " Mensaje ","ChannelMessagePart.mensaje.Description":  "Mensaje a enviar"}</msdyn_localecontent></msdyn_channeldefinitionlocale><msdyn_channeldefinitionlocale msdyn_channeldefinitionlocaleid="f49fea0c-372c-415b-bde6-e645ae370b0e"><msdyn_channeldefinitionid>bf822eb9-35b4-46f5-8376-d55e48483711</msdyn_channeldefinitionid><msdyn_localeid>1033</msdyn_localeid><msdyn_localecontent>{"ChannelDefinition.DisplayName":  "Quantic Connectionsv5.1.2","ChannelDefinition.Description":  "SMS by Quantic Connections","ChannelDefinition.SpecialConsentLabel":  "SMS Consent","ChannelMessagePart.mensaje.DisplayName":  "Message","ChannelMessagePart.mensaje.Description":  "Message to send"}</msdyn_localecontent></msdyn_channeldefinitionlocale></msdyn_channeldefinitionlocales>
+2025-06-19 10:28:36.464 a. m.	Marketing	Info	Channel : <msdyn_channeldefinitions><msdyn_channeldefinition msdyn_channeldefinitionid="bf822eb9-35b4-46f5-8376-d55e48483711"><msdyn_channeldefinitionexternalentity>d4b_configuracionremitente</msdyn_channeldefinitionexternalentity><msdyn_channeldefinitionexternalformid>4fc084e9-fed5-40a5-bc20-24f6c16d7776</msdyn_channeldefinitionexternalformid><msdyn_channeldefinitionaccountexternalentity>d4b_configuracionquantic</msdyn_channeldefinitionaccountexternalentity><msdyn_channeldefinitionaccountexternalformid>93fd9d2c-3a7c-4475-8eb2-4118a0672a88</msdyn_channeldefinitionaccountexternalformid><msdyn_channeltype>SMS</msdyn_channeltype><msdyn_description>Enviío de mensajes mediante Quantic Vision</msdyn_description><msdyn_displayname>Quantic Connections</msdyn_displayname><msdyn_hasdeliveryreceipt>1</msdyn_hasdeliveryreceipt><msdyn_hasinbound>0</msdyn_hasinbound><msdyn_outboundendpointurltemplate>/d4b_ManejoChatWhatsAppTwilio</msdyn_outboundendpointurltemplate><msdyn_specialconsentrequired>1</msdyn_specialconsentrequired><msdyn_supportsaccount>0</msdyn_supportsaccount><msdyn_supportsattachment>0</msdyn_supportsattachment><msdyn_supportsbinary>0</msdyn_supportsbinary><statecode>0</statecode><statuscode>1</statuscode></msdyn_channeldefinition></msdyn_channeldefinitions>
+2025-06-19 10:28:36.466 a. m.	Marketing	Info	Customizations.xml file edited successfully
+2025-06-19 10:28:36.802 a. m.	Marketing	Info	New solution generated in a zip file
+2025-06-19 10:28:36.805 a. m.	Marketing	Info	Solution file copied to: C:\Users\Eric Vega\Downloads\Quantic
+2025-06-19 10:32:16.218 a. m.	Marketing	Info	Solution imported successfully
+2025-06-19 10:32:53.376 a. m.	Marketing	Info	Solution published successfully
+2025-06-19 10:32:53.385 a. m.	Marketing	Info	Temporary files deleted...
