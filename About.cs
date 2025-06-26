@@ -15,11 +15,6 @@ namespace CreatorChannelsXrmToolbox
             DateTime _date = DateTime.Now;
             LblYear.Text = _date.Year.ToString();
         }
-
-        private void LblLinkIcon_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            LblLinkIcon.LinkVisited = true;
-            System.Diagnostics.Process.Start("https://www.flaticon.com/free-icons/process");
-        }
+        
     }
 }

@@ -224,7 +224,7 @@
             // 
             this.nuevoToolStripMenuItem.Image = global::CreatorChannelsXrmToolbox.Properties.Resources.add_24;
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(228, 30);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
             this.nuevoToolStripMenuItem.Text = "New";
             this.nuevoToolStripMenuItem.Click += new System.EventHandler(this.nuevoToolStripMenuItem_Click);
             // 
@@ -232,7 +232,7 @@
             // 
             this.openJsonFileToolStripMenuItem.Image = global::CreatorChannelsXrmToolbox.Properties.Resources.open_24;
             this.openJsonFileToolStripMenuItem.Name = "openJsonFileToolStripMenuItem";
-            this.openJsonFileToolStripMenuItem.Size = new System.Drawing.Size(228, 30);
+            this.openJsonFileToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
             this.openJsonFileToolStripMenuItem.Text = "Open JSON File";
             this.openJsonFileToolStripMenuItem.Click += new System.EventHandler(this.openJsonFileToolStripMenuItem_Click);
             // 
@@ -240,7 +240,7 @@
             // 
             this.saveJSONFileToolStripMenuItem.Image = global::CreatorChannelsXrmToolbox.Properties.Resources.save_24;
             this.saveJSONFileToolStripMenuItem.Name = "saveJSONFileToolStripMenuItem";
-            this.saveJSONFileToolStripMenuItem.Size = new System.Drawing.Size(228, 30);
+            this.saveJSONFileToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
             this.saveJSONFileToolStripMenuItem.Text = "Save JSON File";
             this.saveJSONFileToolStripMenuItem.Click += new System.EventHandler(this.saveJSONFileToolStripMenuItem_Click);
             // 
@@ -291,7 +291,7 @@
             this.GroupMessageEditor.Size = new System.Drawing.Size(539, 120);
             this.GroupMessageEditor.TabIndex = 19;
             this.GroupMessageEditor.TabStop = false;
-            this.GroupMessageEditor.Text = "Step #4: Message editor";
+            this.GroupMessageEditor.Text = "Step #4: Set the message editor";
             // 
             // CheckMessageEditor
             // 
@@ -368,7 +368,7 @@
             this.GroupLocalization.Size = new System.Drawing.Size(539, 216);
             this.GroupLocalization.TabIndex = 18;
             this.GroupLocalization.TabStop = false;
-            this.GroupLocalization.Text = "Step #3: Location information (Optional).";
+            this.GroupLocalization.Text = "Step #3: Set the location information (Optional).";
             // 
             // TxtSpecialConsentENG
             // 
@@ -690,7 +690,7 @@
             this.GroupPartsMessage.Size = new System.Drawing.Size(567, 692);
             this.GroupPartsMessage.TabIndex = 16;
             this.GroupPartsMessage.TabStop = false;
-            this.GroupPartsMessage.Text = "Step #2: Parts of the message";
+            this.GroupPartsMessage.Text = "Step #2: Set the parts message";
             // 
             // LblPartMessageDescription
             // 
@@ -1083,7 +1083,7 @@
             this.GroupChannel.Size = new System.Drawing.Size(539, 370);
             this.GroupChannel.TabIndex = 14;
             this.GroupChannel.TabStop = false;
-            this.GroupChannel.Text = "Step #5: Solution and channel information";
+            this.GroupChannel.Text = "Step #5: Set the solution and channel information";
             // 
             // LblChannelType
             // 

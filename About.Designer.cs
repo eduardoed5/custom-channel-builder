@@ -32,9 +32,8 @@
             this.LblDescription = new System.Windows.Forms.Label();
             this.LblAuthor = new System.Windows.Forms.Label();
             this.LblYear = new System.Windows.Forms.Label();
-            this.ImgLogo = new System.Windows.Forms.PictureBox();
-            this.LblLinkIcon = new System.Windows.Forms.LinkLabel();
             this.LblVersion = new System.Windows.Forms.Label();
+            this.ImgLogo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ImgLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,31 +69,11 @@
             // LblYear
             // 
             this.LblYear.AutoSize = true;
-            this.LblYear.Location = new System.Drawing.Point(206, 287);
+            this.LblYear.Location = new System.Drawing.Point(201, 264);
             this.LblYear.Name = "LblYear";
             this.LblYear.Size = new System.Drawing.Size(42, 16);
             this.LblYear.TabIndex = 3;
             this.LblYear.Text = "[year]";
-            // 
-            // ImgLogo
-            // 
-            this.ImgLogo.Image = global::CreatorChannelsXrmToolbox.Properties.Resources.about;
-            this.ImgLogo.Location = new System.Drawing.Point(171, 2);
-            this.ImgLogo.Name = "ImgLogo";
-            this.ImgLogo.Size = new System.Drawing.Size(128, 128);
-            this.ImgLogo.TabIndex = 4;
-            this.ImgLogo.TabStop = false;
-            // 
-            // LblLinkIcon
-            // 
-            this.LblLinkIcon.AutoSize = true;
-            this.LblLinkIcon.Location = new System.Drawing.Point(89, 261);
-            this.LblLinkIcon.Name = "LblLinkIcon";
-            this.LblLinkIcon.Size = new System.Drawing.Size(264, 16);
-            this.LblLinkIcon.TabIndex = 5;
-            this.LblLinkIcon.TabStop = true;
-            this.LblLinkIcon.Text = "Process icons created by pojok d - Flaticon";
-            this.LblLinkIcon.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LblLinkIcon_LinkClicked);
             // 
             // LblVersion
             // 
@@ -106,13 +85,22 @@
             this.LblVersion.TabIndex = 6;
             this.LblVersion.Text = "Version 1.0";
             // 
+            // ImgLogo
+            // 
+            this.ImgLogo.Image = global::CreatorChannelsXrmToolbox.Properties.Resources.logo;
+            this.ImgLogo.Location = new System.Drawing.Point(171, 2);
+            this.ImgLogo.Name = "ImgLogo";
+            this.ImgLogo.Size = new System.Drawing.Size(128, 128);
+            this.ImgLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgLogo.TabIndex = 4;
+            this.ImgLogo.TabStop = false;
+            // 
             // About
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(456, 314);
+            this.ClientSize = new System.Drawing.Size(456, 294);
             this.Controls.Add(this.LblVersion);
-            this.Controls.Add(this.LblLinkIcon);
             this.Controls.Add(this.ImgLogo);
             this.Controls.Add(this.LblYear);
             this.Controls.Add(this.LblAuthor);
@@ -140,7 +128,6 @@
         private System.Windows.Forms.Label LblAuthor;
         private System.Windows.Forms.Label LblYear;
         private System.Windows.Forms.PictureBox ImgLogo;
-        private System.Windows.Forms.LinkLabel LblLinkIcon;
         private System.Windows.Forms.Label LblVersion;
     }
 }
