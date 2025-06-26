@@ -1,8 +1,8 @@
-﻿# Generate custom channel solution
+﻿# Custom channels solution builder
 
-This component allows you to generate a Dynamics 365 solution to establish a custom channel in Customer Insights - Journeys.
+This component allows you to create a Dynamics 365 solution to establish a custom channel in Customer Insights - Journeys.
 
-To accomplish this, you must first create the C# plugin with the necessary elements for sending the message, and then create the [Custom API](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-custom-channel-custom-api) with its corresponding _Request_ and _Response_. All of this can be done from the page: [https://make.powerapps.com/](https://make.powerapps.com/).
+To accomplish this, you must first create the C# plugin with the necessary elements for sending the message, and then create the [Custom API](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-custom-channel-custom-api) with its corresponding _Request_ and _Response_. Additionally, the extended configuration entities and their respective forms must be created in the traditional way and be published so that they can be selected ([See Moore](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/create-edit-entities-portal?tabs=excel)).  All of this can be done from the page: [https://make.powerapps.com/](https://make.powerapps.com/).
 
 The tool allows you to create the solution with the channel elements, this will be done based on a series of steps that I detail below:
 

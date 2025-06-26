@@ -251,8 +251,8 @@
             this.BtnLoading.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.BtnLoading.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnLoading.Name = "BtnLoading";
-            this.BtnLoading.Size = new System.Drawing.Size(118, 28);
-            this.BtnLoading.Text = "Reload data";
+            this.BtnLoading.Size = new System.Drawing.Size(104, 28);
+            this.BtnLoading.Text = "Load data";
             this.BtnLoading.Click += new System.EventHandler(this.BtnLoading_Click);
             // 
             // toolStripSeparator1

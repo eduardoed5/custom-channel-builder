@@ -44,7 +44,7 @@
             this.LblNameApp.Name = "LblNameApp";
             this.LblNameApp.Size = new System.Drawing.Size(451, 29);
             this.LblNameApp.TabIndex = 0;
-            this.LblNameApp.Text = "Generate custom channel solution";
+            this.LblNameApp.Text = "Custom channels solution builder";
             this.LblNameApp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LblDescription
@@ -53,8 +53,8 @@
             this.LblDescription.Name = "LblDescription";
             this.LblDescription.Size = new System.Drawing.Size(432, 37);
             this.LblDescription.TabIndex = 1;
-            this.LblDescription.Text = "This component allows you to generate a Dynamics 365 solution to establish a cust" +
-    "om channel in Customer Insights - Journeys.";
+            this.LblDescription.Text = "This component allows you to create a Dynamics 365 solution to establish a custom" +
+    " channel in Customer Insights - Journeys.";
             this.LblDescription.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LblAuthor

@@ -225,8 +225,7 @@ namespace CreatorChannelsXrmToolbox
                         _response.Publishers = _publishers;
                         _response.Entities = _entities;
                         _response.Apis = _apis;
-                        _response.Languages = _languages;
-                        CmbChannelType.SelectedText = "Custom";
+                        _response.Languages = _languages;                        
                         worker.ReportProgress(-1, "Loading controls...");
                         eventWorker.Result = _response;
                     }
@@ -263,6 +262,8 @@ namespace CreatorChannelsXrmToolbox
                         GroupSMSConfig.Enabled = false;
                         toolStripDropDownOptions.Enabled = true;
                         CmbLanguage.Enabled = true;
+
+                        CmbChannelType.SelectedIndex=0;
                     }
                     else
                         ShowErrorDialog(_response.Exception, "Error", _response.Message, true);
@@ -1219,7 +1220,7 @@ namespace CreatorChannelsXrmToolbox
             CmbEntityAdditional.SelectedText = "";
 
             CmbChannelType.Focus();
-            CmbChannelType.SelectedText = "Custom";
+            CmbChannelType.SelectedIndex = 0;
             GroupSMSConfig.Enabled = false;
 
             CmbConfigEntity.Focus();
