@@ -261,6 +261,8 @@ namespace CreatorChannelsXrmToolbox
                         BtnCopySolution.Enabled = false;
                         TxtCopySolution.Text = "";
                         GroupSMSConfig.Enabled = false;
+                        toolStripDropDownOptions.Enabled = true;
+                        CmbLanguage.Enabled = true;
                     }
                     else
                         ShowErrorDialog(_response.Exception, "Error", _response.Message, true);
@@ -284,7 +286,14 @@ namespace CreatorChannelsXrmToolbox
             }
             else
                 LogInfo("Settings found and loaded");
-            LoadData();
+
+            toolStripDropDownOptions.Enabled = false;
+            CmbLanguage.Enabled = false;
+
+            if (Service != null)
+                LoadData();
+            else
+                DisableAllControls(this);
         }
 
         /// <summary>
@@ -486,7 +495,7 @@ namespace CreatorChannelsXrmToolbox
         private void BtnLoading_Click(object sender, EventArgs e)
         {
             NuevaConfiguracion();
-            LoadData();
+            ExecuteMethod(LoadData);
         }
 
         /// <summary>

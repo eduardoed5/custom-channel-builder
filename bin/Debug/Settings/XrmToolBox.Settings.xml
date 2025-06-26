@@ -46,16 +46,16 @@
   <ShowCategoriesExpanded>false</ShowCategoriesExpanded>
   <UseLegacyToolsList>false</UseLegacyToolsList>
   <LastAdvertisementDisplay>2025-06-19T10:00:03.3364017-05:00</LastAdvertisementDisplay>
-  <LastConnection>Marketing</LastConnection>
+  <LastConnection>Marketing Canales</LastConnection>
   <LastPlugin />
-  <LastUpdateCheck>2025-06-19T10:24:36.6633121-05:00</LastUpdateCheck>
+  <LastUpdateCheck>2025-06-25T19:24:46.1769032-05:00</LastUpdateCheck>
   <MostUsedList>
     <PluginUseCount>
       <Count>142</Count>
       <Name>CreadorCanalesXrmToolbox.MyPlugin</Name>
     </PluginUseCount>
     <PluginUseCount>
-      <Count>50</Count>
+      <Count>64</Count>
       <Name>CreatorChannelsXrmToolbox.MyPlugin</Name>
     </PluginUseCount>
   </MostUsedList>
@@ -69,7 +69,7 @@
   <PluginsStoreShowUpdates xsi:nil="true" />
   <PluginsUpdateSkip>
     <PluginUpdateSkip>
-      <Date>2025-06-19T10:24:40.3089851-05:00</Date>
+      <Date>2025-06-26T15:23:19.7300354-05:00</Date>
       <Name>McTools.Xrm.ConnectionControls</Name>
       <Version>1.2024.9.59</Version>
     </PluginUpdateSkip>

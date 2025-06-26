@@ -31,13 +31,13 @@
             this.toolStripMenu = new System.Windows.Forms.ToolStrip();
             this.BtnClose = new System.Windows.Forms.ToolStripButton();
             this.tssSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.toolStripDropDownOptions = new System.Windows.Forms.ToolStripDropDownButton();
             this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openJsonFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveJSONFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.BtnLoading = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.LblLanguage = new System.Windows.Forms.ToolStripLabel();
             this.CmbLanguage = new System.Windows.Forms.ToolStripComboBox();
             this.GroupMessageEditor = new System.Windows.Forms.GroupBox();
             this.CheckMessageEditor = new System.Windows.Forms.CheckBox();
@@ -116,6 +116,8 @@
             this.CmbConfigEntity = new System.Windows.Forms.ComboBox();
             this.LblConfigEntity = new System.Windows.Forms.Label();
             this.GroupChannel = new System.Windows.Forms.GroupBox();
+            this.LblChannelType = new System.Windows.Forms.Label();
+            this.CmbChannelType = new System.Windows.Forms.ComboBox();
             this.CheckSpecialConsent = new System.Windows.Forms.CheckBox();
             this.CheckBinary = new System.Windows.Forms.CheckBox();
             this.CheckAttachment = new System.Windows.Forms.CheckBox();
@@ -154,8 +156,6 @@
             this.BtnCopySolution = new System.Windows.Forms.Button();
             this.CmbSolutionType = new System.Windows.Forms.ComboBox();
             this.LblSolutionType = new System.Windows.Forms.Label();
-            this.CmbChannelType = new System.Windows.Forms.ComboBox();
-            this.LblChannelType = new System.Windows.Forms.Label();
             this.GroupSMSConfig = new System.Windows.Forms.GroupBox();
             this.CmbAccountForm = new System.Windows.Forms.ComboBox();
             this.LblAccountForm = new System.Windows.Forms.Label();
@@ -180,10 +180,10 @@
             this.toolStripMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.BtnClose,
             this.tssSeparator1,
-            this.toolStripDropDownButton1,
+            this.toolStripDropDownOptions,
             this.BtnLoading,
             this.toolStripSeparator1,
-            this.toolStripLabel1,
+            this.LblLanguage,
             this.CmbLanguage});
             this.toolStripMenu.Location = new System.Drawing.Point(0, 0);
             this.toolStripMenu.Name = "toolStripMenu";
@@ -207,24 +207,24 @@
             this.tssSeparator1.Name = "tssSeparator1";
             this.tssSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
-            // toolStripDropDownButton1
+            // toolStripDropDownOptions
             // 
-            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripDropDownOptions.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuevoToolStripMenuItem,
             this.openJsonFileToolStripMenuItem,
             this.saveJSONFileToolStripMenuItem});
-            this.toolStripDropDownButton1.Image = global::CreatorChannelsXrmToolbox.Properties.Resources.options_24;
-            this.toolStripDropDownButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(99, 28);
-            this.toolStripDropDownButton1.Text = "Options";
+            this.toolStripDropDownOptions.Image = global::CreatorChannelsXrmToolbox.Properties.Resources.options_24;
+            this.toolStripDropDownOptions.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripDropDownOptions.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownOptions.Name = "toolStripDropDownOptions";
+            this.toolStripDropDownOptions.Size = new System.Drawing.Size(99, 28);
+            this.toolStripDropDownOptions.Text = "Options";
             // 
             // nuevoToolStripMenuItem
             // 
             this.nuevoToolStripMenuItem.Image = global::CreatorChannelsXrmToolbox.Properties.Resources.add_24;
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(228, 30);
             this.nuevoToolStripMenuItem.Text = "New";
             this.nuevoToolStripMenuItem.Click += new System.EventHandler(this.nuevoToolStripMenuItem_Click);
             // 
@@ -232,7 +232,7 @@
             // 
             this.openJsonFileToolStripMenuItem.Image = global::CreatorChannelsXrmToolbox.Properties.Resources.open_24;
             this.openJsonFileToolStripMenuItem.Name = "openJsonFileToolStripMenuItem";
-            this.openJsonFileToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
+            this.openJsonFileToolStripMenuItem.Size = new System.Drawing.Size(228, 30);
             this.openJsonFileToolStripMenuItem.Text = "Open JSON File";
             this.openJsonFileToolStripMenuItem.Click += new System.EventHandler(this.openJsonFileToolStripMenuItem_Click);
             // 
@@ -240,7 +240,7 @@
             // 
             this.saveJSONFileToolStripMenuItem.Image = global::CreatorChannelsXrmToolbox.Properties.Resources.save_24;
             this.saveJSONFileToolStripMenuItem.Name = "saveJSONFileToolStripMenuItem";
-            this.saveJSONFileToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
+            this.saveJSONFileToolStripMenuItem.Size = new System.Drawing.Size(228, 30);
             this.saveJSONFileToolStripMenuItem.Text = "Save JSON File";
             this.saveJSONFileToolStripMenuItem.Click += new System.EventHandler(this.saveJSONFileToolStripMenuItem_Click);
             // 
@@ -260,13 +260,13 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
-            // toolStripLabel1
+            // LblLanguage
             // 
-            this.toolStripLabel1.Image = global::CreatorChannelsXrmToolbox.Properties.Resources.language;
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(174, 28);
-            this.toolStripLabel1.Text = "Alternative language:";
-            this.toolStripLabel1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.LblLanguage.Image = global::CreatorChannelsXrmToolbox.Properties.Resources.language;
+            this.LblLanguage.Name = "LblLanguage";
+            this.LblLanguage.Size = new System.Drawing.Size(174, 28);
+            this.LblLanguage.Text = "Alternative language:";
+            this.LblLanguage.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             // 
             // CmbLanguage
             // 
@@ -375,6 +375,7 @@
             this.TxtSpecialConsentENG.Enabled = false;
             this.TxtSpecialConsentENG.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtSpecialConsentENG.Location = new System.Drawing.Point(282, 174);
+            this.TxtSpecialConsentENG.MaxLength = 1000;
             this.TxtSpecialConsentENG.Multiline = true;
             this.TxtSpecialConsentENG.Name = "TxtSpecialConsentENG";
             this.TxtSpecialConsentENG.Size = new System.Drawing.Size(247, 35);
@@ -385,6 +386,7 @@
             this.TxtDescriptionENG.Enabled = false;
             this.TxtDescriptionENG.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDescriptionENG.Location = new System.Drawing.Point(282, 109);
+            this.TxtDescriptionENG.MaxLength = 100;
             this.TxtDescriptionENG.Multiline = true;
             this.TxtDescriptionENG.Name = "TxtDescriptionENG";
             this.TxtDescriptionENG.Size = new System.Drawing.Size(247, 43);
@@ -395,6 +397,7 @@
             this.TxtDisplayNameENG.Enabled = false;
             this.TxtDisplayNameENG.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDisplayNameENG.Location = new System.Drawing.Point(282, 65);
+            this.TxtDisplayNameENG.MaxLength = 100;
             this.TxtDisplayNameENG.Name = "TxtDisplayNameENG";
             this.TxtDisplayNameENG.Size = new System.Drawing.Size(250, 22);
             this.TxtDisplayNameENG.TabIndex = 11;
@@ -434,6 +437,7 @@
             this.TxtSpecialConsentALT.Enabled = false;
             this.TxtSpecialConsentALT.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtSpecialConsentALT.Location = new System.Drawing.Point(9, 175);
+            this.TxtSpecialConsentALT.MaxLength = 1000;
             this.TxtSpecialConsentALT.Multiline = true;
             this.TxtSpecialConsentALT.Name = "TxtSpecialConsentALT";
             this.TxtSpecialConsentALT.Size = new System.Drawing.Size(247, 35);
@@ -444,6 +448,7 @@
             this.TxtDescriptionALT.Enabled = false;
             this.TxtDescriptionALT.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDescriptionALT.Location = new System.Drawing.Point(9, 109);
+            this.TxtDescriptionALT.MaxLength = 100;
             this.TxtDescriptionALT.Multiline = true;
             this.TxtDescriptionALT.Name = "TxtDescriptionALT";
             this.TxtDescriptionALT.Size = new System.Drawing.Size(247, 43);
@@ -454,6 +459,7 @@
             this.TxtDisplayNameALT.Enabled = false;
             this.TxtDisplayNameALT.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDisplayNameALT.Location = new System.Drawing.Point(9, 65);
+            this.TxtDisplayNameALT.MaxLength = 100;
             this.TxtDisplayNameALT.Name = "TxtDisplayNameALT";
             this.TxtDisplayNameALT.Size = new System.Drawing.Size(250, 22);
             this.TxtDisplayNameALT.TabIndex = 5;
@@ -711,6 +717,7 @@
             this.TxtPartMessageDescription.Enabled = false;
             this.TxtPartMessageDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPartMessageDescription.Location = new System.Drawing.Point(205, 124);
+            this.TxtPartMessageDescription.MaxLength = 100;
             this.TxtPartMessageDescription.Multiline = true;
             this.TxtPartMessageDescription.Name = "TxtPartMessageDescription";
             this.TxtPartMessageDescription.Size = new System.Drawing.Size(348, 48);
@@ -721,6 +728,7 @@
             this.TxtPartMessageDisplayName.Enabled = false;
             this.TxtPartMessageDisplayName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPartMessageDisplayName.Location = new System.Drawing.Point(205, 80);
+            this.TxtPartMessageDisplayName.MaxLength = 100;
             this.TxtPartMessageDisplayName.Name = "TxtPartMessageDisplayName";
             this.TxtPartMessageDisplayName.Size = new System.Drawing.Size(350, 22);
             this.TxtPartMessageDisplayName.TabIndex = 29;
@@ -795,6 +803,7 @@
             // 
             this.TxtPartDescriptionENG.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPartDescriptionENG.Location = new System.Drawing.Point(188, 113);
+            this.TxtPartDescriptionENG.MaxLength = 100;
             this.TxtPartDescriptionENG.Multiline = true;
             this.TxtPartDescriptionENG.Name = "TxtPartDescriptionENG";
             this.TxtPartDescriptionENG.Size = new System.Drawing.Size(181, 48);
@@ -815,6 +824,7 @@
             // 
             this.TxtPartDescriptionALT.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPartDescriptionALT.Location = new System.Drawing.Point(6, 113);
+            this.TxtPartDescriptionALT.MaxLength = 100;
             this.TxtPartDescriptionALT.Multiline = true;
             this.TxtPartDescriptionALT.Name = "TxtPartDescriptionALT";
             this.TxtPartDescriptionALT.Size = new System.Drawing.Size(172, 48);
@@ -844,6 +854,7 @@
             // 
             this.TxtPartDisplayNameENG.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPartDisplayNameENG.Location = new System.Drawing.Point(188, 63);
+            this.TxtPartDisplayNameENG.MaxLength = 100;
             this.TxtPartDisplayNameENG.Name = "TxtPartDisplayNameENG";
             this.TxtPartDisplayNameENG.Size = new System.Drawing.Size(181, 22);
             this.TxtPartDisplayNameENG.TabIndex = 16;
@@ -862,6 +873,7 @@
             // 
             this.TxtPartDisplayNameALT.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPartDisplayNameALT.Location = new System.Drawing.Point(6, 63);
+            this.TxtPartDisplayNameALT.MaxLength = 100;
             this.TxtPartDisplayNameALT.Name = "TxtPartDisplayNameALT";
             this.TxtPartDisplayNameALT.Size = new System.Drawing.Size(172, 22);
             this.TxtPartDisplayNameALT.TabIndex = 15;
@@ -921,6 +933,7 @@
             // 
             this.TxtPartMessageName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPartMessageName.Location = new System.Drawing.Point(207, 36);
+            this.TxtPartMessageName.MaxLength = 100;
             this.TxtPartMessageName.Name = "TxtPartMessageName";
             this.TxtPartMessageName.Size = new System.Drawing.Size(354, 22);
             this.TxtPartMessageName.TabIndex = 6;
@@ -1072,6 +1085,29 @@
             this.GroupChannel.TabStop = false;
             this.GroupChannel.Text = "Step #5: Solution and channel information";
             // 
+            // LblChannelType
+            // 
+            this.LblChannelType.AutoSize = true;
+            this.LblChannelType.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblChannelType.Location = new System.Drawing.Point(16, 29);
+            this.LblChannelType.Name = "LblChannelType";
+            this.LblChannelType.Size = new System.Drawing.Size(102, 16);
+            this.LblChannelType.TabIndex = 21;
+            this.LblChannelType.Text = "Channel Type *:";
+            // 
+            // CmbChannelType
+            // 
+            this.CmbChannelType.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbChannelType.FormattingEnabled = true;
+            this.CmbChannelType.Items.AddRange(new object[] {
+            "Custom",
+            "SMS"});
+            this.CmbChannelType.Location = new System.Drawing.Point(160, 21);
+            this.CmbChannelType.Name = "CmbChannelType";
+            this.CmbChannelType.Size = new System.Drawing.Size(366, 24);
+            this.CmbChannelType.TabIndex = 20;
+            this.CmbChannelType.SelectedValueChanged += new System.EventHandler(this.CmbChannelType_SelectedValueChanged);
+            // 
             // CheckSpecialConsent
             // 
             this.CheckSpecialConsent.AutoSize = true;
@@ -1154,6 +1190,7 @@
             // 
             this.TxtChannelDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtChannelDescription.Location = new System.Drawing.Point(159, 203);
+            this.TxtChannelDescription.MaxLength = 100;
             this.TxtChannelDescription.Multiline = true;
             this.TxtChannelDescription.Name = "TxtChannelDescription";
             this.TxtChannelDescription.Size = new System.Drawing.Size(367, 101);
@@ -1202,6 +1239,7 @@
             // 
             this.TxtChannelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtChannelName.Location = new System.Drawing.Point(159, 144);
+            this.TxtChannelName.MaxLength = 100;
             this.TxtChannelName.Name = "TxtChannelName";
             this.TxtChannelName.Size = new System.Drawing.Size(366, 22);
             this.TxtChannelName.TabIndex = 5;
@@ -1461,29 +1499,6 @@
             this.LblSolutionType.TabIndex = 29;
             this.LblSolutionType.Text = "Solution Type:";
             // 
-            // CmbChannelType
-            // 
-            this.CmbChannelType.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmbChannelType.FormattingEnabled = true;
-            this.CmbChannelType.Items.AddRange(new object[] {
-            "Custom",
-            "SMS"});
-            this.CmbChannelType.Location = new System.Drawing.Point(160, 21);
-            this.CmbChannelType.Name = "CmbChannelType";
-            this.CmbChannelType.Size = new System.Drawing.Size(366, 24);
-            this.CmbChannelType.TabIndex = 20;
-            this.CmbChannelType.SelectedValueChanged += new System.EventHandler(this.CmbChannelType_SelectedValueChanged);
-            // 
-            // LblChannelType
-            // 
-            this.LblChannelType.AutoSize = true;
-            this.LblChannelType.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblChannelType.Location = new System.Drawing.Point(16, 29);
-            this.LblChannelType.Name = "LblChannelType";
-            this.LblChannelType.Size = new System.Drawing.Size(102, 16);
-            this.LblChannelType.TabIndex = 21;
-            this.LblChannelType.Text = "Channel Type *:";
-            // 
             // GroupSMSConfig
             // 
             this.GroupSMSConfig.Controls.Add(this.CmbAccountForm);
@@ -1684,7 +1699,7 @@
         private System.Windows.Forms.Label LblPublisher;
         private System.Windows.Forms.ComboBox CmbPublisher;
         private System.Windows.Forms.GroupBox GroupFooter;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownOptions;
         private System.Windows.Forms.ToolStripMenuItem nuevoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openJsonFileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveJSONFileToolStripMenuItem;
@@ -1711,7 +1726,7 @@
         private System.Windows.Forms.ColumnHeader Description_Column;
         private System.Windows.Forms.ColumnHeader Length_Column;
         private System.Windows.Forms.Button btnDeleteComponent;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripLabel LblLanguage;
         private System.Windows.Forms.ToolStripComboBox CmbLanguage;
         private System.Windows.Forms.TextBox TxtCopySolution;
         private System.Windows.Forms.CheckBox CheckImportSolution;

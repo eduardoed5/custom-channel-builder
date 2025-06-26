@@ -4,34 +4,34 @@
   <Connections>
     <ConnectionDetail>
       <AuthType>None</AuthType>
-      <AzureAdAppId>20f2a03b-fcb8-4fda-9b8a-181c48b48a26</AzureAdAppId>
+      <AzureAdAppId>e29662e8-101e-401a-8569-0b0e4387ecf7</AzureAdAppId>
       <BrowserName>None</BrowserName>
-      <ClientSecret>vx49ok57FN2DSLNkPodNVc+pQ5EflWQhcAj2rrLzi9yaxG7cV+RSI05sMuuj+355</ClientSecret>
-      <ConnectionId>ced060ee-cc0f-48fa-a2db-d32d968dd143</ConnectionId>
-      <ConnectionName>Marketing</ConnectionName>
-      <EnvironmentId>93aa9407-db94-e7ac-b800-b0fccd3ac415</EnvironmentId>
+      <ClientSecret>SksZLxEYvtaoPysqjNCr5zPgSSqfxrMWBZ6BD6NHeyDyvN9lYBnMZc5rF1vIsYr+</ClientSecret>
+      <ConnectionId>d6cae1c5-f753-45bc-b6c8-f15a4dc9bc60</ConnectionId>
+      <ConnectionName>Marketing Canales</ConnectionName>
+      <EnvironmentId>381198a2-eb1e-edbb-9fbf-ba9961ba1706</EnvironmentId>
       <IsCustomAuth>false</IsCustomAuth>
       <IsFromSdkLoginCtrl>false</IsFromSdkLoginCtrl>
-      <LastUsedOn>2025-06-19 10:24:44</LastUsedOn>
+      <LastUsedOn>2025-06-25 19:25:08</LastUsedOn>
       <NewAuthType>ClientSecret</NewAuthType>
-      <Organization>unqa40a455a661ef0119aed002248322</Organization>
-      <OrganizationDataServiceUrl>https://org25fb5ca9.api.crm.dynamics.com/XRMServices/2011/OrganizationData.svc</OrganizationDataServiceUrl>
+      <Organization>unq579e1a08b441f011be52000d3a106</Organization>
+      <OrganizationDataServiceUrl>https://org6eb1ca7c.api.crm.dynamics.com/XRMServices/2011/OrganizationData.svc</OrganizationDataServiceUrl>
       <OrganizationFriendlyName>Marketing Trial</OrganizationFriendlyName>
-      <OrganizationServiceUrl>https://org25fb5ca9.api.crm.dynamics.com/XRMServices/2011/Organization.svc</OrganizationServiceUrl>
-      <OrganizationUrlName>org25fb5ca9</OrganizationUrlName>
-      <OrganizationVersion>9.2.25053.200</OrganizationVersion>
-      <OriginalUrl>https://org25fb5ca9.crm.dynamics.com/</OriginalUrl>
-      <S2SClientSecret>vx49ok57FN2DSLNkPodNVc+pQ5EflWQhcAj2rrLzi9yaxG7cV+RSI05sMuuj+355</S2SClientSecret>
+      <OrganizationServiceUrl>https://org6eb1ca7c.api.crm.dynamics.com/XRMServices/2011/Organization.svc</OrganizationServiceUrl>
+      <OrganizationUrlName>org6eb1ca7c</OrganizationUrlName>
+      <OrganizationVersion>9.2.25053.210</OrganizationVersion>
+      <OriginalUrl>https://org6eb1ca7c.crm.dynamics.com</OriginalUrl>
+      <S2SClientSecret>SksZLxEYvtaoPysqjNCr5zPgSSqfxrMWBZ6BD6NHeyDyvN9lYBnMZc5rF1vIsYr+</S2SClientSecret>
       <SavePassword>true</SavePassword>
-      <ServerName>org25fb5ca9.crm.dynamics.com</ServerName>
+      <ServerName>org6eb1ca7c.crm.dynamics.com</ServerName>
       <ServerPort>443</ServerPort>
-      <TenantId>b36da8b1-8c11-4da2-917c-98eb4a17c46a</TenantId>
+      <TenantId>590117b6-9da2-49e7-937e-8ba886f9cfe7</TenantId>
       <Timeout />
       <TimeoutTicks>9000000000</TimeoutTicks>
       <UseIfd>false</UseIfd>
       <UseMfa>false</UseMfa>
-      <UserName>20f2a03b-fcb8-4fda-9b8a-181c48b48a26</UserName>
-      <WebApplicationUrl>https://org25fb5ca9.crm.dynamics.com/</WebApplicationUrl>
+      <UserName>e29662e8-101e-401a-8569-0b0e4387ecf7</UserName>
+      <WebApplicationUrl>https://org6eb1ca7c.crm.dynamics.com/</WebApplicationUrl>
     </ConnectionDetail>
   </Connections>
   <IsReadOnly>false</IsReadOnly>
