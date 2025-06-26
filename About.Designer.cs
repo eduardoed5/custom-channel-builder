@@ -44,7 +44,7 @@
             this.LblNameApp.Name = "LblNameApp";
             this.LblNameApp.Size = new System.Drawing.Size(451, 29);
             this.LblNameApp.TabIndex = 0;
-            this.LblNameApp.Text = "Custom channels solution builder";
+            this.LblNameApp.Text = "Custom Channels Solution Builder";
             this.LblNameApp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LblDescription
@@ -79,11 +79,11 @@
             // 
             this.LblVersion.AutoSize = true;
             this.LblVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblVersion.Location = new System.Drawing.Point(190, 164);
+            this.LblVersion.Location = new System.Drawing.Point(201, 162);
             this.LblVersion.Name = "LblVersion";
-            this.LblVersion.Size = new System.Drawing.Size(73, 16);
+            this.LblVersion.Size = new System.Drawing.Size(44, 16);
             this.LblVersion.TabIndex = 6;
-            this.LblVersion.Text = "Version 1.0";
+            this.LblVersion.Text = "1.0.0.1";
             // 
             // ImgLogo
             // 

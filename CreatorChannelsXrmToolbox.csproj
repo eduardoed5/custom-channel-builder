@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CreatorChannelsXrmToolbox</RootNamespace>
-    <AssemblyName>CreatorChannelsXrmToolbox</AssemblyName>
+    <AssemblyName>CustomChannelsSolutionBuilder</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
