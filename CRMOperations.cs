@@ -332,6 +332,36 @@ namespace CreatorChannelsXrmToolbox
         }
 
         /// <summary>
+        /// Allows you to obtain the solution component ID for a specified entity.
+        /// </summary>
+        /// <param name="service">API Service for Dynamics 365</param>
+        /// <param name="primaryentityname">Logical name of the entity</param>
+        /// <returns>Component type ID of the solution</returns>
+        /// <exception cref="Exception">Exception when the records of the specified entity cannot be added directly to the solution</exception>
+        public static int GetObjectTypeComponentDefinition(IOrganizationService service, string primaryentityname)
+        {
+            QueryExpression _query = new QueryExpression("solutioncomponentdefinition")
+            {
+                NoLock = true,
+                ColumnSet = new ColumnSet("objecttypecode"),
+                Criteria = new FilterExpression
+                {
+                    Conditions =
+                    {
+                       new ConditionExpression("canbeaddedtosolutioncomponents", ConditionOperator.Equal, true),
+                       new ConditionExpression("primaryentityname", ConditionOperator.Equal, primaryentityname)
+                    }
+                }
+            };
+
+            EntityCollection _response = service.RetrieveMultiple(_query);
+            if (_response.Entities.Count > 0)
+                return Convert.ToInt32(_response.Entities[0]["objecttypecode"].ToString());
+            else
+                throw new Exception("Records of the entity with logical name: " + primaryentityname + " cannot be added directly in a solution.");
+        }
+
+        /// <summary>
         /// Publish the specified solution
         /// </summary>
         /// <param name="service">API Service for Dynamics 365</param>

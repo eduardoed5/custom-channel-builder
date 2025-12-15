@@ -42,6 +42,10 @@ namespace CreatorChannelsXrmToolbox
             ListMessageType.Items.Add(new MessageType() { Id = 192350003, Name = "File" });
             ListMessageType.Items.Add(new MessageType() { Id = 192350004, Name = "Image" });
             ListMessageType.Items.Add(new MessageType() { Id = 192350005, Name = "Lookup" });
+            ListMessageType.Items.Add(new MessageType() { Id = 192350006, Name = "Number" });
+            ListMessageType.Items.Add(new MessageType() { Id = 192350007, Name = "Boolean" });
+            ListMessageType.Items.Add(new MessageType() { Id = 192350008, Name = "Options" });
+
 
             ControlsPartsDisabled();
 
@@ -1992,7 +1996,7 @@ namespace CreatorChannelsXrmToolbox
                             if (!CRMOperations.ExistsSolutionComponent(Service, _channel.CustomAPI.Id, _principalSolution.Id))
                             {
                                 worker.ReportProgress(-1, "Adding the custom API to the solution...");
-                                CRMOperations.AddSolutionComponent(Service, _channel.CustomAPI.Id, 10027, _principalSolution.Name, true);
+                                CRMOperations.AddSolutionComponent(Service, _channel.CustomAPI.Id, CRMOperations.GetObjectTypeComponentDefinition(Service, "customapi"), _principalSolution.Name, true);
                                 LogInfo("Added necessary components (Custom API) to the solution.");
                             }
                             else
