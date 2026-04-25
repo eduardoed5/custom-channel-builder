@@ -45,7 +45,8 @@ namespace CreatorChannelsXrmToolbox
             ListMessageType.Items.Add(new MessageType() { Id = 192350006, Name = "Number" });
             ListMessageType.Items.Add(new MessageType() { Id = 192350007, Name = "Boolean" });
             ListMessageType.Items.Add(new MessageType() { Id = 192350008, Name = "Options" });
-
+            ListMessageType.Items.Add(new MessageType() { Id = 192350009, Name = "Date" });
+            ListMessageType.Items.Add(new MessageType() { Id = 192350010, Name = "Datetime" });
 
             ControlsPartsDisabled();
 
